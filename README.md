@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bundobust
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# tsp-bundobust-ui
+Create, View, Update &amp; Delete Bundobust for Security Personnel
+>>>>>>> a878c8c9538115158b8f56b7e26bf71c7f54a370
