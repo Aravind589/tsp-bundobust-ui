@@ -1,0 +1,30 @@
+<div class="sidenav">
+    <a href="../../personal/" class="personal pt-5">Personal Skills</a>
+    <a href="../../posting/">Posting Information</a>
+    <a href="../../banking/">Banking Details</a>
+    <a href="../../address/">Address for correspondence</a>
+    <a href="../../health/">Health Profile</a>
+    <a href="../../publish/">Publish Details</a>
+</div>
+
+<div class="container mt-5">
+    <button type="submit" class="btn btn-info" data-toggle="modal" data-target="#submit" >Submit</button>
+</div>
+
+<div class="modal fade" id="submit">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Bundobust Account</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body text-success">
+                <b>Account has been created successfully</b>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" sty>close</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" (click)="okay()">okay</button>
+            </div>
+        </div>
+    </div>
+</div>

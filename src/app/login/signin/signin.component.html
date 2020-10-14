@@ -1,0 +1,62 @@
+<section class="main">
+    <h1 class="text-center" style="padding-top: 30px;">Telangana State Police</h1>
+    <h1 class="text-center">Bundobust</h1>
+    <div class="container pt-4">
+        <div class="card">
+            <div class="card-body">
+                <img src="../../../assets/images/logo1.png" class="rounded mx-auto d-block">
+                <h4 class="text-center">Sign in To Your Account </h4>
+                <hr>
+                <form [formGroup]="signinForm">
+                    <div class="form-group">
+                        <input type="email" class="form-control form-control-lg" formControlName="email" id="email" placeholder="Id No *"
+                        [ngClass]="{'is-invalid':signinForm.get('email').touched && signinForm.get('email').invalid}"/>
+                        <div *ngIf="signinForm.get('email').touched && signinForm.get('email').invalid" class="invalid-feedback">
+                            <div *ngIf="signinForm.get('email').errors.required" style="color: red;">
+                                Email is required
+                            </div>
+                            <div *ngIf="signinForm.get('email').errors.email">
+                                Email must be a valid Name
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control form-control-lg" formControlName="password" id="password" placeholder="Password *"
+                        [ngClass]="{'is-invalid':signinForm.get('password').touched && signinForm.get('password').invalid}"/>
+                        <div *ngIf="signinForm.get('password').touched && signinForm.get('password').invalid" class="invalid-feedback">
+                            <div *ngIf="signinForm.get('password').errors.required" style="color: red;">
+                                Password is required
+                            </div>
+                            <div *ngIf="signinForm.get('password').errors.password">
+                                Password must be a valid Name
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="text-center">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#singin" [disabled]="!signinForm.valid" (click)="signin()">SIGN IN</button>
+                    <button class="btn btn-primary ml-5" (click)="signup()">SIGN UP</button>
+                </div>
+                <h5><a href="" class="text-center">Forgot your password?</a></h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="singin">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Police Bundobust</h4>
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            </div>
+            <div class="modal-body text-success">
+                <b>You have signin successfully</b>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" (click)="onClick()">okay</button>
+            </div>
+        </div>
+    </div>
+</div>

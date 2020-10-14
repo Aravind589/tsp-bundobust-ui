@@ -1,0 +1,85 @@
+<div class="sidenav">
+    <a href="../../personal/" class="personal pt-5">Personal Skills</a>
+    <a href="../../posting/">Posting Information</a>
+    <a href="../../banking/">Banking Details</a>
+    <a href="../../address/">Address for correspondence</a>
+    <a href="../../health/">Health Profile</a>
+    <a href="../../publish/">Publish Details</a>
+</div>
+
+<div class="main">
+    <h1 class="text-center pt-4 pb-5"><b>Temporary Address</b></h1>
+    <div class="row ml-5">
+        <div class="form-group col-md-4">
+            <label for="address">Address Line:</label>
+            <input type="address" class="form-control" id="address">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="street">StreetColony Name:</label>
+            <input type="street" class="form-control" id="street">
+        </div>
+    </div>
+    <div class="row ml-5">
+        <div class="form-group col-md-4">
+            <label for="city">City/Village/Town:</label>
+            <input type="city" class="form-control" id="city">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="district">District:</label>
+            <input type="district" class="form-control" id="district">
+        </div>
+    </div>
+    <div class="row ml-5">
+        <div class="form-group col-md-4">
+            <label for="pincode">Pincode:</label>
+            <input type="pincode" class="form-control" id="pincode">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="state">State:</label>
+            <input type="state" class="form-control" id="state">
+        </div>
+    </div>
+    <div class="row ml-5">
+        <div class="form-check form-check-inline col-md-12 ml-3">
+            <h4>Same As Temporary Address</h4>
+            <input class="form-check-input ml-4" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label ml-1" for="inlineCheckbox2">Tick if both address are same</label>
+        </div>
+    </div>
+
+    <h1 class="text-center pt-4 pb-5"><b>Permanant Address</b></h1>
+    <div class="row ml-5">
+        <div class="form-group col-md-4">
+            <label for="address">Address Line:</label>
+            <input type="address" class="form-control" id="address">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="street">StreetColony Name:</label>
+            <input type="street" class="form-control" id="street">
+        </div>
+    </div>
+    <div class="row ml-5">
+        <div class="form-group col-md-4">
+            <label for="city">City/Village/Town:</label>
+            <input type="city" class="form-control" id="city">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="district">District:</label>
+            <input type="district" class="form-control" id="district">
+        </div>
+    </div>
+    <div class="row ml-5">
+        <div class="form-group col-md-4">
+            <label for="pincode">Pincode:</label>
+            <input type="pincode" class="form-control" id="pincode">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="state">State:</label>
+            <input type="state" class="form-control" id="state">
+        </div>
+    </div>
+    <span>
+        <button type="button" class="btn btn-light" (click)="back()">Back</button>
+        <button type="button" class="btn btn-info" (click)="next()">Next</button>
+    </span>
+</div>

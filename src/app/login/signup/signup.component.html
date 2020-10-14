@@ -1,0 +1,79 @@
+<section class="main">
+    <h1 class="text-center" style="padding-top: 30px;">Telangana State Police</h1>
+    <h1 class="text-center">Bundobust</h1>
+    <div class="container pt-4">
+
+        <div class="card">
+            <div class="card-body">
+                <img src="../../../assets/images/logo1.png" class="rounded mx-auto d-block">
+                <h4 class="text-center">Sign up To Your Account </h4>
+                <hr>
+                <form [formGroup]="registerForm">
+                    <div class="form-group">
+                        <input type="firstname" class="form-control " formControlName="firstname" id="firstname" placeholder="First Name *"
+                        [ngClass]="{'is-invalid':registerForm.get('firstname').touched && registerForm.get('firstname').invalid}"/>
+                        <div *ngIf="registerForm.get('firstname').touched && registerForm.get('firstname').invalid" class="invalid-feedback">
+                            <div *ngIf="registerForm.get('firstname').errors.required" style="color: red;">
+                                First Name is required
+                            </div>
+                            <div *ngIf="registerForm.get('firstname').errors.firstname">
+                                First Name must be a valid Name
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="lastname" class="form-control " formControlName="lastname" id="lastname" placeholder="Last Name *"
+                        [ngClass]="{'is-invalid':registerForm.get('lastname').touched && registerForm.get('lastname').invalid}"/>
+                        <div *ngIf="registerForm.get('lastname').touched && registerForm.get('lastname').invalid" class="invalid-feedback">
+                            <div *ngIf="registerForm.get('lastname').errors.required" style="color: red;">
+                                Last Name is required
+                            </div>
+                            <div *ngIf="registerForm.get('lastname').errors.lastname">
+                               Last Name must be a valid Name
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control " formControlName="email" id="email" placeholder="Id No *"
+                        [ngClass]="{'is-invalid':registerForm.get('email').touched && registerForm.get('email').invalid}"/>
+                        <div *ngIf="registerForm.get('email').touched && registerForm.get('email').invalid" class="invalid-feedback">
+                            <div *ngIf="registerForm.get('email').errors.required" style="color: red;">
+                                Email is required
+                            </div>
+                            <div *ngIf="registerForm.get('email').errors.email">
+                                Email must be a valid Name
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control " formControlName="password" id="password" placeholder="Password *"
+                        [ngClass]="{'is-invalid':registerForm.get('password').touched && registerForm.get('password').invalid}"/>
+                        <div *ngIf="registerForm.get('password').touched && registerForm.get('password').invalid" class="invalid-feedback">
+                            <div *ngIf="registerForm.get('password').errors.required" style="color: red;">
+                                Password is required
+                            </div>
+                            <div *ngIf="registerForm.get('password').errors.password">
+                                Password must be a valid Name
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="confirmpassword" class="form-control " formControlName="confirmpassword" id="confirmpassword" placeholder="Confirm Password *"
+                        [ngClass]="{'is-invalid':registerForm.get('confirmpassword').touched && registerForm.get('confirmpassword').invalid}"/>
+                        <div *ngIf="registerForm.get('confirmpassword').touched && registerForm.get('confirmpassword').invalid" class="invalid-feedback">
+                            <div *ngIf="registerForm.get('confirmpassword').errors.required" style="color: red;">
+                                Confirm Password is required
+                            </div>
+                            <div *ngIf="registerForm.get('confirmpassword').errors.confirmpassword">
+                                Confirm Password must be a valid Name
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="text-center">
+                    <button class="btn btn-primary pb-2" [disabled]="!registerForm.valid" (click)="signup()">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

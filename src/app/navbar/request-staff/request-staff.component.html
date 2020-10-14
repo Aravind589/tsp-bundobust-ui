@@ -1,0 +1,175 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="../../../assets/images/logo1.png">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+                <a class="nav-link" href="../home/"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../view-staff-details/"><b>My Staff</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../other-staff/"><b>Out Staff</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../create-bundobust/"><b>Create Bundobust</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../events/"><b>Events</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../alerts/"><b>Alerts</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../reports/"><b>Reports</b></a>
+            </li>
+        </ul>
+    </div>
+</nav> -->
+
+
+<section class="main">
+    <div class="container pt-5">
+        <div class="table-responsive pt-5">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Event Id</th>
+                        <th>Event Name</th>
+                        <th>District</th>
+                        <th>SDPO</th>
+                        <th>Circle</th>
+                        <th>Police Station</th>
+                        <th>Depolyed Staff</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TS0125</td>
+                        <td>Ganesh Bandobast</td>
+                        <td>Ranga Reddy</td>
+                        <td>SDPO1</td>
+                        <td>Circle1</td>
+                        <td>Kukatpally</td>
+                        <td>0</td>
+                        <td>01-7-2020</td>
+                        <td>15-07-2020</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <label for="district">District</label>
+                <select  id="" class="form-control">
+                    <option selected>Choose..</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="">SDPO</label>
+                <select id="" class="form-control">
+                    <option selected>Choose..</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="">Circle</label>
+                <select id="" class="form-control">
+                    <option selected>Choose..</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="">Police Station</label>
+                <select id="" class="form-control">
+                    <option selected>Choose..</option>
+                    <option>...</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h2 class="title mb-5">Request to Allocate</h2>
+        <div class="row mb-4">
+            <div class="col-md-2">
+                <h5>SI</h5>
+            </div>
+            <div class="col-md-3">
+                <select id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">...</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-2">
+                <h5>ASI</h5>
+            </div>
+            <div class="col-md-3">
+                <select id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">...</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-2">
+                <h5>HC</h5>
+            </div>
+            <div class="col-md-3">
+                <select id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">...</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-2">
+                <h5>PC</h5>
+            </div>
+            <div class="col-md-3">
+                <select id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">...</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-2">
+                <h5>Homeguard</h5>
+            </div>
+            <div class="col-md-3">
+                <select id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">...</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-2">
+                <h5>Any</h5>
+            </div>
+            <div class="col-md-3">
+                <select id="" class="form-control">
+                    <option value="">Select</option>
+                    <option value="">...</option>
+                </select>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary"
+            style="margin-right: 50px; margin-top: 50px; margin-left: 400px; border-radius: 30px; height: 50px; width: 120px;"
+            (click)="Cancel()">Cancel</button>
+        <button type="button" class="btn btn-primary"
+            style="margin-right: 50px; margin-top: 50px; border-radius: 30px; height: 50px; width: 120px;"
+            (click)="onSubmit()">Submit</button>
+    </div>
+</section>

@@ -1,0 +1,36 @@
+<div class="sidenav">
+    <a href="../../personal/" class="personal pt-5">Personal Skills</a>
+    <a href="../../posting/">Posting Information</a>
+    <a href="../../banking/">Banking Details</a>
+    <a href="../../address/">Address for correspondence</a>
+    <a href="../../health/">Health Profile</a>
+    <a href="../../publish/">Publish Details</a>
+</div>
+
+<div class="main">
+    <h1 class="text-center pt-4 pb-5"><b>Bank Details</b></h1>
+    <div class="row ml-5">
+        <div class="form-group col-md-4">
+            <label for="holdername">Bank A/C Holder Name</label>
+            <input type="holdername" class="form-control" id="holdername">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="accountnumber">Account Number</label>
+            <input type="accountnumber" class="form-control" id="accountnumber">
+        </div>
+    </div>
+    <div class="row  ml-5">
+        <div class="form-group col-md-4">
+            <label for="bankname">Bank Name</label>
+            <input type="bankname" class="form-control" id="bankname">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="ifsc">IFSC Code</label>
+            <input type="ifsc" class="form-control" id="ifsc">
+        </div>
+    </div><br>
+    <span>
+        <button type="button" class="btn btn-light" (click)="back()">Back</button>
+        <button type="button" class="btn btn-info" (click)="next()">Next</button>
+    </span>
+</div>

@@ -1,0 +1,82 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="../../../assets/images/logo1.png">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+                <a class="nav-link" href="../home/"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../view-staff-details/"><b>My Staff</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../other-staff/"><b>Out Staff</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../create-bundobust/"><b>Create Bundobust</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../events/" style="background-color: #4A53E1; color: white;"><b>Events</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../alerts/"><b>Alerts</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../reports/"><b>Reports</b></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<section class="main">
+    <div class="container-fluid pt-5">
+        <span>
+            <button type="button" class="btn btn-primary" style="height: 50px; width: 120px;">Active Events</button>
+            <button type="button" class="btn btn-outline-primary ml-5" style="height: 50px; width: 120px;" (click)="history()">History</button>
+        </span> 
+        <div class="table-responsive pt-5">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>SNO</th>
+                        <th>Event Id</th>
+                        <th>Event Name</th>
+                        <th>District</th>
+                        <th>SDPO</th>
+                        <th>Circle</th>
+                        <th>Police Station</th>
+                        <th>Depolyed Staff</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Request Staff</th>
+                        <th>Deploy Staff</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>TS0125</td>
+                        <td>Ganesh Bandobast</td>
+                        <td>Ranga Reddy</td>
+                        <td>SDPO1</td>
+                        <td>Circle1</td>
+                        <td>Kukatpally</td>
+                        <td>0</td>
+                        <td>01-7-2020</td>
+                        <td>15-07-2020</td>
+                        <td> <button type="button" class="btn btn-info" (click)="requestStaff()">Click Here</button> </td>
+                        <td><button type="button" class="btn btn-info" (click)="depolyStaff()">Click Here</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button type="button" class="btn btn-primary float-right"
+            style="margin-right: 50px; margin-top: 50px; border-radius: 30px; height: 50px; width: 120px;" (click)="onClick()">Okay</button>
+        <!-- <button type="button" class="btn btn-primary float-right"
+            style="margin-right: 50px; margin-top: 50px; border-radius: 30px; height: 50px; width: 120px;" ></button> -->
+    </div>
+</section>

@@ -1,0 +1,208 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="../../../assets/images/logo1.png">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+                <a class="nav-link" href="../home/"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../view-staff-details/"><b>My Staff</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../other-staff/"><b>Out Staff</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../create-bundobust/" style="background-color: #4A53E1; color: white;"><b>Create Bundobust</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../events/"><b>Events</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../alerts/"><b>Alerts</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../reports/"><b>Reports</b></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<section class="main">
+    <div class="card mt-5" style="height: auto;padding:20px;">
+        <h1 class="text-center"><b>Create Bundobust</b></h1>
+        <hr>
+        <form class="pl-1" [formGroup]="uploadForm">
+            <div class="row pt-4">
+                <div class="col-md-4 pt-1"><b>Name of Event*</b></div>
+                <div class="col-md-1">:</div>
+                <div class="form-group col-md-7">
+                    <input type="text" class="form-control" formControlName="name" id="name"
+                    [ngClass]="{'is-invalid':uploadForm.get('name').touched && uploadForm.get('name').invalid}" />
+                    <div *ngIf="uploadForm.get('name').touched && uploadForm.get('name').invalid" class="invalid-feedback">
+                        <div *ngIf="uploadForm.get('name').errors.required" style="color: red;">
+                            First Name is required
+                        </div>
+                        <div *ngIf="uploadForm.get('name').errors.name">
+                            Name of the event must be a valid Name
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 pt-1"><b>District *</b></div>
+                <div class="col-md-1">:</div>
+                <div class=" form-group col-md-7">
+                    <select id="" class="form-control">
+                        <option selected>Select..</option>
+                        <option>...</option>
+                    </select>
+                    <!-- [ngClass]="{'is-invalid':uploadForm.get('district').touched && uploadForm.get('district').invalid}" />
+                    <div *ngIf="uploadForm.get('district').touched && uploadForm.get('district').invalid" class="invalid-feedback">
+                        <div *ngIf="uploadForm.get('district').errors.required" style="color: red;">
+                            district is required
+                        </div>
+                        <div *ngIf="uploadForm.get('district').errors.district">
+                            district must be a valid 
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 pt-1"><b>SDPO *</b></div>
+                <div class="col-md-1">:</div>
+                <div class=" form-group col-md-7">
+                    <select id="" class="form-control">
+                        <option selected>Select..</option>
+                        <option>...</option>
+                    </select>
+                    <!-- <input type="text" class="form-control" formControlName="sdpo" id="sdpo"
+                    [ngClass]="{'is-invalid':uploadForm.get('sdpo').touched && uploadForm.get('sdpo').invalid}" />
+                    <div *ngIf="uploadForm.get('sdpo').touched && uploadForm.get('sdpo').invalid" class="invalid-feedback">
+                        <div *ngIf="uploadForm.get('sdpo').errors.required" style="color: red;">
+                            sdpo is required
+                        </div>
+                        <div *ngIf="uploadForm.get('sdpo').errors.sdpo">
+                            sdpo must be a valid 
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 pt-1"><b>Circle *</b></div>
+                <div class="col-md-1">:</div>
+                <div class="form-group col-md-7">
+                    <select id="" class="form-control">
+                        <option selected>Select..</option>
+                        <option>...</option>
+                    </select>
+                    <!-- <input type="text" class="form-control" formControlName="circle" id="circle" 
+                    [ngClass]="{'is-invalid':uploadForm.get('circle').touched && uploadForm.get('circle').invalid}" />
+                    <div *ngIf="uploadForm.get('circle').touched && uploadForm.get('circle').invalid" class="invalid-feedback">
+                        <div *ngIf="uploadForm.get('circle').errors.required" style="color: red;">
+                            circle is required
+                        </div>
+                        <div *ngIf="uploadForm.get('circle').errors.circle">
+                            circle must be a valid Name
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 pt-1"><b>Police Station *</b></div>
+                <div class="col-md-1">:</div>
+                <div class="form-group col-md-7">
+                    <select id="" class="form-control">
+                        <option selected>Select..</option>
+                        <option>...</option>
+                    </select>
+                    <!-- <input type="text" class="form-control" formControlName="policeStation" id="policeStation" 
+                    [ngClass]="{'is-invalid':uploadForm.get('policeStation').touched && uploadForm.get('policeStation').invalid}" />
+                    <div *ngIf="uploadForm.get('policeStation').touched && uploadForm.get('policeStation').invalid" class="invalid-feedback">
+                        <div *ngIf="uploadForm.get('policeStation').errors.required" style="color: red;">
+                            policeStation is required
+                        </div>
+                        <div *ngIf="uploadForm.get('policeStation').errors.policeStation">
+                            policeStation must be a valid Name
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 pt-1"><b>Staff Size *</b></div>
+                <div class="col-md-1">:</div>
+                <div class="form-group col-md-7">
+                    <input type="text" class="form-control" formControlName="staffsize" id="staffsize"
+                        [ngClass]="{'is-invalid':uploadForm.get('staffsize').touched && uploadForm.get('staffsize').invalid}" />
+                    <div *ngIf="uploadForm.get('staffsize').touched && uploadForm.get('staffsize').invalid" class="invalid-feedback">
+                        <div *ngIf="uploadForm.get('staffsize').errors.required" style="color: red;">
+                            staffsize is required
+                        </div>
+                        <div *ngIf="uploadForm.get('staffsize').errors.staffsize">
+                            staffsize must be a valid Name
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 pt-1"><b>Start Date *</b></div>
+                <div class="col-md-1">:</div>
+                <div class="form-group col-md-7">
+                    <input type="date" id="startDate" class="form-control" formControlName="startDate" name="startDate"
+                    [ngClass]="{'is-invalid':uploadForm.get('startDate').touched && uploadForm.get('startDate').invalid}" />
+                    <div *ngIf="uploadForm.get('startDate').touched && uploadForm.get('startDate').invalid" class="invalid-feedback">
+                        <div *ngIf="uploadForm.get('startDate').errors.required" style="color: red;">
+                            startDate is required
+                        </div>
+                        <div *ngIf="uploadForm.get('startDate').errors.startDate">
+                            startDate must be a valid 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 pt-1"><b>End Date *</b></div>
+                <div class="col-md-1">:</div>
+                <div class="form-group col-md-7">
+                    <input type="date" id="endDate" class="form-control" formControlName="endDate" name="endDate"
+                    [ngClass]="{'is-invalid':uploadForm.get('endDate').touched && uploadForm.get('endDate').invalid}" />
+                    <div *ngIf="uploadForm.get('endDate').touched && uploadForm.get('endDate').invalid" class="invalid-feedback">
+                        <div *ngIf="uploadForm.get('endDate').errors.required" style="color: red;">
+                            endDate is required
+                        </div>
+                        <div *ngIf="uploadForm.get('endDate').errors.endDate">
+                            endDate must be a valid 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <span>
+                <button type="button" class="btn btn-primary mt-3 mb-3" style="margin-left: 300px;" (click)="back()">Back</button>
+                <button type="button" class="btn btn-outline-primary ml-3" data-toggle="modal" data-target="#submit"
+                [disabled]="!uploadForm.valid" (click)="onSubmit()">Submit</button>
+            </span>
+        </form>
+    </div>
+</section>
+
+<div class="modal fade" id="submit">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Created Bundobust</h4>
+            </div>
+            <div class="modal-body text-success">
+                <b>Event has been created successfully</b> 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">close</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" (click)="onClick()">okay</button>
+            </div>
+        </div>
+    </div>
+</div>
