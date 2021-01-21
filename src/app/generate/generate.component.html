@@ -1,0 +1,203 @@
+<section class="main">
+  <div class="container pt-5">
+    <div class="card">
+      <form>
+        <h1 class="text-center pt-3"><b>DUTY PASSPORT</b></h1>
+        <hr/>
+        <div class="row pt-2">
+          <div class="form-group col-md-6">
+            <label for="">PS:</label>
+            <input type="text" class="form-control" id="ps" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="">Circle</label>
+            <input type="text" class="form-control" id="circle" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="">Sub-division:</label>
+            <input type="text" class="form-control" id="sub-division" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="">Distr/comm/zone:</label>
+            <input type="text" class="form-control" id="dist" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="">Nature Of Duty</label>
+            <input type="text" class="form-control" id="natureofduty" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="">Place Of Duty</label>
+            <input type="text" class="form-control" id="placeofduty" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="">Sector</label>
+          <input type="text" class="form-control" id="sector" />
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label for="">Name</label>
+            <input type="text" class="form-control" id="name" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="">Journal No:</label>
+            <input type="text" class="form-control" id="journal" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="">Mobile NUmber:</label>
+            <input type="text" class="form-control" id="mobilenumber" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label for="">Shifts 1</label>
+            <input type="text" class="form-control" id="shifts1" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="">Shifts 2</label>
+            <input type="text" class="form-control" id="shifts2" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="">Shifts 3</label>
+            <input type="text" class="form-control" id="shifts3" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label for="">In-Charge Officer</label>
+            <input type="text" class="form-control" id="officer" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="">Rank</label>
+            <input type="text" class="form-control" id="rank" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="">Mobile No</label>
+            <input type="text" class="form-control" id="mobileno" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-4">
+            <label for="">In-Charge Senior Officer</label>
+            <input type="text" class="form-control" id="seniorofficer" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="">Rank</label>
+            <input type="text" class="form-control" id="rank1" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="">Mobile No</label>
+            <input type="text" class="form-control" id="mobileno1" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <label>Emergency Contact Number:</label>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>SNO</th>
+                  <th>DEPARTMENT</th>
+                  <th>I/C Officer</th>
+                  <th>Mobile/Phone Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Police Control</td>
+                  <td></td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Fire</td>
+                  <td></td>
+                  <td>101</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Medical</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Revenue</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>NDRF</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>R&D</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Crane I/C</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Electricity</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Other</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label for="">General Instructions:</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+        <span>
+          <button
+            type="submit"
+            class="btn btn-outline-info float-right mb-4 mt-2"
+            (click)="submit()"
+          >
+            Submit
+          </button>
+          <button
+            type="cancel"
+            class="btn btn-outline-info float-right mb-4 mt-2 mr-4"
+          >
+            Cancel
+          </button>
+        </span>
+      </form>
+    </div>
+  </div>
+  <br /><br /><br />
+</section>

@@ -1,0 +1,1386 @@
+<p-sidebar
+  [style]="{ 'overflow-y': 'scroll' }"
+  [(visible)]="visibleSidebar1"
+  [baseZIndex]="10000"
+>
+  <!--  <h1 style="font-weight:normal"></h1> -->
+  <p-panelMenu [model]="items" [style]="{ width: '200px' }"></p-panelMenu>
+</p-sidebar>
+<button
+  type="button"
+  class="btn"
+  (click)="visibleSidebar1 = true"
+  style="color: white; background-color: #353e73"
+>
+  Annexures List
+</button>
+
+<!-- Tables -->
+<div style="text-align: center;">
+<!-- Annexure-I -->
+<div *ngIf="Table1" class="container mt-4">
+  <h3>
+    <u><b>Central Zone-Ganesh</b></u>
+  </h3>
+  <h4><u>Ganesh Festival day immersion Bandobust Arrangements</u></h4>
+  <h4>
+    <u><b>ANNEXURE-I</b></u>
+  </h4>
+  <h4>
+    <u
+      >Bandobust provide at ganesh Mandapams and to Accompany the vehicles
+      during the procession</u
+    >
+  </h4>
+
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Division</th>
+      <th rowspan="2">Police Station</th>
+      <th rowspan="2">
+        No.Of
+        Ganesh Idols
+        Installed
+      </th>
+      <th rowspan="2">
+        No.Of Ganesh Idols
+        Permitted for the
+        procession on final day
+      </th>
+      <th colspan="9">Strength</th>
+    </tr>
+    <tr>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+    <tr>
+      <td rowspan="2" ><div contenteditable>1</div></td>
+      <td  rowspan="4">Central</td>
+      <td rowspan="4">Saifabad</td>
+      <td rowspan="2">Saifabad</td>
+      <td rowspan="2">120</td>
+      <td>28</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>53</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>-</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>56</td>
+      <td>76</td>
+      <td>89</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Nampalli</td>
+      <td>41</td>
+      <td>20</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>11</td>
+      <td>11</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>ramgopal pet</td>
+      <td>65</td>
+      <td>22</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>45</td>
+      <td>-</td>
+      <td>76</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td (click)="temp()" ><div contenteditable>balance:</div></td>
+    </tr>
+    <tr></tr>
+  </table>
+  <!-- <div>
+    <h3>Balance:</h3>
+  </div> -->
+</div>
+
+<!-- Annexure -II -->
+<div *ngIf="Table2" class="container">
+  <h3>
+    <b><u>ANNEXURE-II</u></b>
+  </h3>
+  <h3><u>Bundobust Provided at sensitive Pickets</u></h3>
+
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Divison</th>
+      <th rowspan="2">Police station</th>
+      <th rowspan="2">Location of the picket</th>
+      <th rowspan="2">
+        Name,rank &
+        Designation of I/C 
+        with phone No.
+      </th>
+      <th colspan="9">Strength</th>
+    </tr>
+    <tr>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+  </table>
+</div>
+<!-- Annexure -III -->
+<div *ngIf="Table3" class="container">
+  <h3>
+    <b><u>ANNEXURE-III</u></b>
+  </h3>
+  <h3><u>Bundobust Provided at Hyper sensitive Pickets</u></h3>
+
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Divison</th>
+      <th rowspan="2">Police station</th>
+      <th rowspan="2">Location of the picket</th>
+      <th rowspan="2">
+        Name,rank &
+        Designation of I/C 
+        with phone No.
+      </th>
+      <th colspan="9">Strength</th>
+    </tr>
+    <tr>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+  </table>
+</div>
+<!-- Annexure -IV-->
+<div *ngIf="Table4" class="container">
+  <h3>
+    <b><u>ANNEXURE-IV</u></b>
+  </h3>
+  <h3><u>Mobile Parties</u></h3>
+
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Divison</th>
+      <th rowspan="2">Police station</th>
+      <th rowspan="2">Location of the picket</th>
+      <th rowspan="2">
+        Name,rank &
+        Designation of I/C 
+        with phone No.
+      </th>
+      <th colspan="9">Strength</th>
+    </tr>
+    <tr>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+  </table>
+</div>
+<!-- ANNEXURE-V -->
+<div *ngIf="Table5" class="container ">
+  <h5>
+    <b><u>ANNEXURE-V</u></b>
+  </h5>
+  <h5><u>STRIKING FORCE</u></h5>
+
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Division</th>
+      <th rowspan="2">Police Station</th>
+      <th rowspan="2">Location Of The Striking Force</th>
+      <th colspan="9">Strength</th>
+    </tr>
+    <tr>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+
+    <tr>
+      <td rowspan="2">1</td>
+      <td rowspan="4">Central</td>
+      <td rowspan="4">Saifabad</td>
+      <td rowspan="2">Saifabad</td>
+      <td rowspan="2">telugu thalli</td>
+      <td>28</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>53</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+    </tr>
+  </table>
+</div>
+<!-- ANNEXURE-VI -->
+<div *ngIf="Table6" class="container">
+  <h3>Data not given</h3>
+</div>
+<!-- ANNEXURE-VII -->
+<div *ngIf="Table7" class="container ">
+  <h5>
+    <b><u>ANNEXURE-VII</u></b>
+  </h5>
+  <h5>
+    <u
+      >VEHICLE CHECKING POINTS-STENGTH (IT WILL BE MANNED WITH THE PICKET
+      STRENGTH )
+    </u>
+  </h5>
+
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Division</th>
+      <th rowspan="2">Police Station</th>
+      <th rowspan="2">Location Of The Vehicle Checking Point</th>
+      <th colspan="9">Strength</th>
+    </tr>
+    <tr>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+
+    <tr>
+      <td rowspan="2">1</td>
+      <td rowspan="4">Central</td>
+      <td rowspan="4">Saifabad</td>
+      <td rowspan="2">Saifabad</td>
+      <td rowspan="2">Hospital</td>
+      <td>28</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>53</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+    </tr>
+  </table>
+</div>
+<!-- ANNEXURE-VIII -->
+<div *ngIf="Table8" class="container ">
+  <h5>
+    <b><u>ANNEXURE-VIII</u></b>
+  </h5>
+  <h5><u>FOOT PATROLLING TEAMS</u></h5>
+
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Division</th>
+      <th rowspan="2">Police Station</th>
+      <th colspan="2">
+        Route/area of Foot patrolling Teams
+      </th>
+      <th colspan="9">Strength</th>
+    </tr>
+    <tr>
+      <th>From</th>
+      <th>To</th>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+
+    <tr>
+      <td rowspan="2">1</td>
+      <td rowspan="4">Central</td>
+      <td rowspan="4">Saifabad</td>
+      <td rowspan="2">Saifabad</td>
+      <td rowspan="2">v.v.statue</td>
+      <td>Nirnkari</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>53</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+    </tr>
+  </table>
+</div>
+<!-- ANNEXURE-IX -->
+<div *ngIf="Table9" class="container ">
+  <h5>
+    <b><u>ANNEXURE-IX</u></b>
+  </h5>
+  <h5><u>ROUTE BANDOBUST</u></h5>
+  <h5>
+    <u>ROUTE BANDOBUST-JUNCION MANAGEMENT PROCESSION ROUTE</u>
+  </h5>
+
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Division</th>
+      <th rowspan="2">Police Station</th>
+      <th colspan="3">SECTOR</th>
+      <th colspan="9">Strength</th>
+    </tr>
+    <tr>
+      <th>No</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+
+    <tr>
+      <td rowspan="2">1</td>
+      <td rowspan="4">Central</td>
+      <td rowspan="4">Saifabad</td>
+      <td rowspan="2">Saifabad</td>
+      <td rowspan="2">1</td>
+      <td>Telugu Talli</td>
+      <td>Liberty</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>53</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+    </tr>
+  </table>
+</div>
+<!-- ANNEXURE-IX-A -->
+<div *ngIf="Table9A" class="container ">
+  <h5>
+    <b><u>ANNEXURE-IX-A</u></b>
+  </h5>
+  <h5><u>ALTERNATE ROUTE BANDOBUST-STRENGTH</u></h5>
+
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Division</th>
+      <th rowspan="2">Police Station</th>
+      <th colspan="3">Sector</th>
+      <th colspan="9">Strength</th>
+    </tr>
+    <tr>
+      <th>No</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+
+    <tr>
+      <td rowspan="2">1</td>
+      <td rowspan="4">Central</td>
+      <td rowspan="4">Saifabad</td>
+      <td rowspan="2">Saifabad</td>
+      <td rowspan="2">1</td>
+      <td>Abids</td>
+      <td>B.J.P.Office</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>53</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+    </tr>
+  </table>
+</div>
+<!-- ANNEXURE-X -->
+<div *ngIf="Table10" class="container ">
+  <h5>
+    <b><u>ANNEXURE-X</u></b>
+  </h5>
+  <h5><u>ROOF TOP BANDOBUST</u></h5>
+
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Division</th>
+      <th rowspan="2">Police Station</th>
+      <th rowspan="2">Sector No</th>
+      <th rowspan="2">location Of The Posting</th>
+      <th colspan="9">Strength</th>
+    </tr>
+    <tr>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+
+    <tr>
+      <td rowspan="2">1</td>
+      <td rowspan="4">Central</td>
+      <td rowspan="4">Saifabad</td>
+      <td rowspan="2">Saifabad</td>
+      <td rowspan="2">1</td>
+      <td>BRK Bhavan</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>53</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+    </tr>
+  </table>
+</div>
+<!-- ANNEXURE-XI -->
+<div *ngIf="Table11" class="container ">
+  <h5>
+    <b><u>ANNEXURE-XI</u></b>
+  </h5>
+  <h5><u>BANDOBUST AT BARRICADING POINTS</u></h5>
+
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Division</th>
+      <th rowspan="2">Police Station</th>
+      <th rowspan="2">Sector No</th>
+      <th rowspan="2">location Of The Posting</th>
+      <th colspan="9">Strength</th>
+    </tr>
+    <tr>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+
+    <tr>
+      <td rowspan="2">1</td>
+      <td rowspan="4">Central</td>
+      <td rowspan="4">Saifabad</td>
+      <td rowspan="2">Saifabad</td>
+      <td rowspan="2">1</td>
+      <td>Across the road between KLK and LB Stadium</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>53</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+    </tr>
+  </table>
+</div>
+<!-- ANNEXURE-XII -->
+<div *ngIf="Table12" class="container ">
+  <h5>
+    <b><u>ANNEXURE-XII</u></b>
+  </h5>
+  <h5><u>PUSHING PARTIES</u></h5>
+
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Division</th>
+      <th rowspan="2">Police Station</th>
+      <th colspan="3">Pushing Party</th>
+      <th colspan="9">Strength</th>
+    </tr>
+    <tr>
+      <th>No</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+
+    <tr>
+      <td rowspan="2">1</td>
+      <td rowspan="4">Central</td>
+      <td rowspan="4">Saifabad</td>
+      <td rowspan="2">Saifabad</td>
+      <td rowspan="2">1</td>
+      <td>Telugu Thalli</td>
+      <td>secretariat gate</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>53</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+    </tr>
+  </table>
+</div>
+
+<!-- ANNEXURE-XIII -->
+<div *ngIf="Table13" class="container ">
+  <h5>
+    <b><u>ANNEXURE-XIII</u></b>
+  </h5>
+  <h5>
+    <u>BANDOBUST PROVIDED AT IMMERSION POINTS</u>
+  </h5>
+
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Division</th>
+      <th rowspan="2">Police Station</th>
+      <th rowspan="2">Location of the Immersion</th>
+      <th rowspan="2">
+        Name,Rank,Designation of 
+        incharge wit phone.no
+      </th>
+      <th colspan="9">Strength</th>
+    </tr>
+    <tr>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+
+    <tr>
+      <td rowspan="2">1</td>
+      <td rowspan="4">Central</td>
+      <td rowspan="4">Saifabad</td>
+      <td rowspan="2">Saifabad</td>
+      <td rowspan="2">Crane No.1</td>
+      <td>Sri.</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>53</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+    </tr>
+  </table>
+</div>
+<!-- ANNEXURE-XIV -->
+<div *ngIf="Table14" class="container ">
+  <h5>
+    <b><u>ANNEXURE-XIV</u></b>
+  </h5>
+  <h5><u>LOCATION OF VIDEO CAMERAS</u></h5>
+
+  <table>
+    <tr>
+      <th colspan="1">Sl.no</th>
+      <th colspan="1">Zone</th>
+      <th colspan="1">Division</th>
+      <th colspan="1">Police Station</th>
+      <th colspan="1">Location Of The Video Cameras</th>
+      <th colspan="1">
+        Name,Rank,Designation of 
+        incharge wit phone.no
+      </th>
+      <th colspan="1">Phone No</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Central</td>
+      <td>Saifabad</td>
+      <td>Saifabad</td>
+      <td>Chintal Basthi</td>
+      <td>1</td>
+      <td>-</td>
+    </tr>
+  </table>
+</div>
+<!-- ANNEXURE-XV -->
+<div *ngIf="Table15" class="container ">
+  <h5>
+    <b><u>ANNEXURE-XV</u></b>
+  </h5>
+  <h5><u>DATA RECORDING POINTS</u></h5>
+
+  <table>
+    <tr>
+      <th colspan="1">Sl.no</th>
+      <th colspan="1">Zone</th>
+      <th colspan="1">Division</th>
+      <th colspan="1">Police Station</th>
+      <th colspan="1">Location</th>
+      <th colspan="1">
+        Name,Rank,Designation of 
+        incharge with phone.no
+      </th>
+      <th colspan="1">Phone No</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Central</td>
+      <td>Saifabad</td>
+      <td>Saifabad</td>
+      <td>Chintal Basthi</td>
+      <td>1</td>
+      <td>-</td>
+    </tr>
+  </table>
+</div>
+<br>
+<!-- ANNEXURE-XV (sub) -->
+<div *ngIf="Table15" class="container ">
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Division</th>
+      <th rowspan="2">Police Station</th>
+      <th colspan="9">Strength</th>
+    </tr>
+    <tr>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td colspan="3">zone total</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>3</td>
+      <td>3</td>
+      <td>20</td>
+      <td>3</td>
+      <td>3</td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+
+<!-- ANNEXURE-XVI -->
+<div *ngIf="Table16" class="container ">
+  <h5>
+    <b><u>ANNEXURE-XVI</u></b>
+  </h5>
+  <h5><u>LOCATION OF GENERATORS</u></h5>
+
+  <table>
+    <tr>
+      <th colspan="1">Sl.no</th>
+      <th colspan="1">Zone</th>
+      <th colspan="1">Division</th>
+      <th colspan="1">Police Station</th>
+      <th colspan="1">Location Of The Generator</th>
+      <th colspan="1">Name,Rank,Designation of I/c with phone.no</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Central</td>
+      <td>Saifabad</td>
+      <td>Saifabad</td>
+      <td>In between Crane-1&2</td>
+      <td>1-SI & 1-HC</td>
+    </tr>
+  </table>
+</div>
+<div *ngIf="Table16" class="container ">
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Division</th>
+      <th rowspan="2">Police Station</th>
+      <th colspan="9">Strength</th>
+    </tr>
+
+    <tr>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td colspan="3">zone total</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1</td>
+      <td>6</td>
+      <td>14</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </table>
+</div>
+<!-- ANNEXURE-XVII -->
+<div *ngIf="Table17" class="container ">
+  <h5>
+    <b><u>ANNEXURE-XVII</u></b>
+  </h5>
+  <h5><u>LOCATION OF MOBILE CRANES </u></h5>
+
+  <table>
+    <tr>
+      <th colspan="1">Sl.no</th>
+      <th colspan="1">Zone</th>
+      <th colspan="1">Division</th>
+      <th colspan="1">Police Station</th>
+      <th colspan="1">Location Of The Mobile Crane</th>
+      <th colspan="1">No.of Mobile Cranes</th>
+      <th colspan="1">
+        Name,Rank,Designation of 
+        incharge wit phone.no
+      </th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Central</td>
+      <td>Saifabad</td>
+      <td>Saifabad</td>
+      <td>1-At PS Saifabad</td>
+      <td>1</td>
+      <td>1HC</td>
+    </tr>
+  </table>
+</div>
+<!-- ANNEXURE-XVIII -->
+<div *ngIf="Table18" class="container ">
+  <h5>
+    <b><u>ANNEXURE-XVIII</u></b>
+  </h5>
+  <h5><u>WATCH TOWERS</u></h5>
+
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Division</th>
+      <th rowspan="2">Police Station</th>
+      <th rowspan="2">Location Of Watch Tower</th>
+      <th rowspan="2">
+        Name,Rank,Designation of 
+        incharge wit phone.no
+      </th>
+      <th colspan="9">Strength</th>
+    </tr>
+    <tr>
+      <th>Addl.sp</th>
+      <th>DSsp</th>
+      <th>Ci's</th>
+      <th>Si's</th>
+      <th>Asi/Hc</th>
+      <th>Pc's</th>
+      <th>HG's</th>
+      <th>Wpc/Whg</th>
+      <th>Armed Sections</th>
+    </tr>
+
+    <tr>
+      <td rowspan="2">1</td>
+      <td rowspan="4">Central</td>
+      <td rowspan="4">Saifabad</td>
+      <td rowspan="2">Saifabad</td>
+      <td rowspan="2">120</td>
+      <td>28</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>53</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+    </tr>
+  </table>
+</div>
+<!-- ANNEXURE-XIX -->
+<div *ngIf="Table19" class="container ">
+  <h5>
+    <b><u>ANNEXURE-XIX</u></b>
+  </h5>
+  <h5>
+    <u>STATEMENT OF VIDEO CAMERAS TO BE HIRED P.S WISE</u>
+  </h5>
+
+  <table>
+    <tr>
+      <th colspan="1">Sl.no</th>
+      <th colspan="1">Zone</th>
+      <th colspan="1">Division</th>
+      <th colspan="1">Police Station</th>
+      <th colspan="1">No.Of Video Cameras to be hired on final immersion</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Central</td>
+      <td>Saifabad</td>
+      <td>Saifabad</td>
+      <td>5</td>
+    </tr>
+  </table>
+</div>
+<!-- ANNEXURE-XX -->
+<div *ngIf="Table20" class="container ">
+  <h5>
+    <b><u>ANNEXURE-XX</u></b>
+  </h5>
+  <h5>
+    <u>STATEMENT OF PRIVATE VEHICLES HIRED P.S WISE</u>
+  </h5>
+
+  <table>
+    <tr>
+      <th rowspan="2">Sl.no</th>
+      <th rowspan="2">Zone</th>
+      <th rowspan="2">Division</th>
+      <th rowspan="2">Police Station</th>
+      <th colspan="4">
+        No.Of PRIVATE VEHICLES hired
+      </th>
+    </tr>
+    <tr>
+      <th>Vans</th>
+      <th>Car/Jeeps</th>
+      <th>Autos</th>
+      <th>Tata Ace Autos</th>
+    </tr>
+    <tr>
+      <td rowspan="1">1</td>
+      <td rowspan="1">Central</td>
+      <td rowspan="1">Saifabad</td>
+      <td rowspan="1">Saifabad</td>
+      <td colspan="1">2</td>
+      <td colspan="1">3</td>
+      <td colspan="1">2</td>
+      <td colspan="1">2</td>
+    </tr>
+  </table>
+</div>
+
+<!-- ANNEXURE-XXI -->
+
+<div *ngIf="Table21" class="container ">
+  <h5>
+    <b><u>ANNEXURE-XXI</u></b>
+  </h5>
+  <h5>
+    <u>PLACES WHERE PUBLIC ADDRESS SYSTEM IS PROVIDED</u>
+  </h5>
+
+  <table>
+    <tr>
+      <th colspan="1">Sl.no</th>
+      <th colspan="1">Zone</th>
+      <th colspan="1">Division</th>
+      <th colspan="1">Police Station</th>
+      <th colspan="1">Locatio Of P.A. System</th>
+      <th colspan="1">
+        Name,Rank,Designation of 
+        incharge wit phone.no
+      </th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Central</td>
+      <td>Saifabad</td>
+      <td>Saifabad</td>
+      <td>TeluguTally Sub-Control</td>
+      <td>1 PC</td>
+    </tr>
+  </table>
+</div>
+<br>
+<!-- ANNEXURE-XXI (sub) -->
+  <div *ngIf="Table21" class="container ">
+    <div class="container ">
+      <table>
+        <tr>
+          <th rowspan="2">Sl.no</th>
+          <th rowspan="2">PUBLIC ADDRESS SYSTEM</th>
+
+          <th colspan="9">Strength</th>
+        </tr>
+        <tr>
+          <th>Addl.sp</th>
+          <th>DSsp</th>
+          <th>Ci's</th>
+          <th>Si's</th>
+          <th>Asi/Hc</th>
+          <th>Pc's</th>
+          <th>HG's</th>
+          <th>Wpc/Whg</th>
+          <th>Armed Sections</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>1</td>
+          <td>3</td>
+          <td>17</td>
+          <td>3</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ANNEXURE-XXII -->
+  <div *ngIf="Table22" class="container">
+    <h5>
+      <b><u>ANNEXURE-XXII</u></b>
+    </h5>
+    <h5>
+      <u>LOCATION OF SENIOR OFFICERS OF AND ABOVE THE RANK OF DSsP</u>
+    </h5>
+
+    <table>
+      <tr>
+        <th>Sl.no</th>
+        <th>Zone</th>
+        <th>Desig.</th>
+        <th>Cell Number</th>
+        <th>Location</th>
+        <th>Area of Responsibility</th>
+        <th>Police Station</th>
+        <th>Division</th>
+        <th>Wireless Set Available or not</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>R.Madhav Rao</td>
+        <td>Comdt.</td>
+        <td>9491390001</td>
+        <td>-</td>
+        <td>NTR Marg(Jt.Control room)</td>
+        <td>-</td>
+        <td>Saifabad</td>
+        <td>Yes</td>
+      </tr>
+    </table>
+  </div>
+  
+  <!-- ANNEXURE-XXIII -->
+  <div *ngIf="Table23" class="container ">
+    <h5>
+      <b><u>ANNEXURE-XXIII</u></b>
+    </h5>
+    <h5>
+      <u>ABSTRACT OF STRENGTH DEPLOYED-ANNEXURE-WISE</u>
+    </h5>
+
+    <table>
+      <tr>
+        <th>Sl.no</th>
+        <th>Anne.</th>
+        <th>Desciption</th>
+        <th>Addl.sp</th>
+        <th>DSsp</th>
+        <th>Ci's</th>
+        <th>Si's</th>
+        <th>Asi/Hc</th>
+        <th>Pc's</th>
+        <th>HG's</th>
+        <th>Wpc/Whg</th>
+        <th>Armed Sections</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>I</td>
+        <td>Bandobust provided of ganesh Manaps</td>
+        <td>0</td>
+        <td>1</td>
+        <td>4</td>
+        <td>19</td>
+        <td>26</td>
+        <td>254</td>
+        <td>146</td>
+        <td>10</td>
+        <td>6</td>
+      </tr>
+    </table>
+  </div>
+  <!-- ANNEXURE-XXIV -->
+  <div *ngIf="Table24" class="container ">
+    <h5>
+      <b><u>ANNEXURE-XXIV</u></b>
+    </h5>
+    <h5><u>FORCE HOW DRAWNs</u></h5>
+
+    <table>
+      <tr>
+        <th rowspan="2">Sl.no</th>
+        <th rowspan="2">Desciption</th>
+        <th colspan="9">Strength</th>
+      </tr>
+      <tr>
+        <th>Addl.sp</th>
+        <th>DSsp</th>
+        <th>Ci's</th>
+        <th>Si's</th>
+        <th>Asi/Hc</th>
+        <th>Pc's</th>
+        <th>HG's</th>
+        <th>Wpc/Whg</th>
+        <th>Armed Sections</th>
+      </tr>
+      <tr>
+        <td colspan="1">1</td>
+        <td>Force Required as per bandobust scheme</td>
+        <td>7</td>
+        <td>35</td>
+        <td>105</td>
+        <td>452</td>
+        <td>260</td>
+        <td>2274</td>
+        <td>665</td>
+        <td>134</td>
+        <td>159 sec</td>
+      </tr>
+    </table>
+  </div>
+  <!-- ANNEXURE-XXV -->
+
+  <div *ngIf="Table25" class="container ">
+    <h5>
+      <b><u>ANNEXURE-XXV</u></b>
+    </h5>
+    <h5><u>ABSTRACT</u></h5>
+
+    <table>
+      <tr>
+        <th>Sl.no</th>
+        <th>Zone</th>
+        <th>Division</th>
+        <th>Police station</th>
+        <th>No.Of Sensitive Pickets</th>
+        <th>No.Of Hyper Sensitive Pickets</th>
+        <th>No.Of Striking Force</th>
+        <th>No.Of Special Striking Force</th>
+        <th>No.Of Pushing Parties</th>
+        <th>No.Of Check Posts</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Central</td>
+        <td>Saifabad</td>
+        <td>Saifabad</td>
+        <td>26</td>
+        <td>0</td>
+        <td>4</td>
+        <td>2</td>
+        <td>14</td>
+        <td>4</td>
+      </tr>
+    </table>
+  </div>
+  <!-- ANNEXURE-XXV(A)   -->
+  <div *ngIf="Table25A" class="container ">
+    <h5>
+      <b><u>ANNEXURE-XXV(A)</u></b>
+    </h5>
+    <h5><u>ABSTRACT</u></h5>
+
+    <table>
+      <tr>
+        <th rowspan="2">Sl.no</th>
+        <th rowspan="2">Zone</th>
+        <th rowspan="2">Division</th>
+        <th rowspan="2">Police Station</th>
+        <th colspan="4">No.of VHF,UHF,Base Mobile & Staic Sets</th>
+        <th rowspan="2">No.Of Generators</th>
+        <th rowspan="2">No.Of Mobile Generators</th>
+        <th rowspan="2">No.Of Static Cranes</th>
+        <th rowspan="2">No.Of Mobile Cranes</th>
+      </tr>
+      <tr>
+        <th colspan="1">VHF Hand Held sets</th>
+        <th colspan="1">UHF Hand Held sets</th>
+        <th colspan="1">Base Mobile sets</th>
+        <th colspan="1">Staic Sets</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>Central</td>
+        <td>Saifabad</td>
+        <td>Saifabad</td>
+        <td>28</td>
+        <td>20</td>
+        <td>10</td>
+        <td>2</td>
+        <td>3</td>
+        <td>11</td>
+        <td>11</td>
+        <td>5</td>
+      </tr>
+    </table>
+  </div>
+  <!-- ANNEXURE-XXV(B) -->
+  <div *ngIf="Table25B" class="container ">
+    <h5>
+      <b><u>ANNEXURE-XXV(B)</u></b>
+    </h5>
+    <h5><u>ABSTRACT</u></h5>
+
+    <table>
+      <tr>
+        <th rowspan="2">Sl.no</th>
+        <th rowspan="2">Zone</th>
+        <th rowspan="2">Division</th>
+        <th rowspan="2">Police Station</th>
+        <th rowspan="2">Watch Towers</th>
+        <th rowspan="2">No. of Video Cameras hired</th>
+
+        <th colspan="3">No.of vehicles hired</th>
+      </tr>
+      <tr>
+        <th colspan="1">Vans</th>
+        <th colspan="1">Car/Jeep</th>
+        <th colspan="1">Autos</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Central</td>
+        <td>Saifabad</td>
+        <td>Saifabad</td>
+        <td>6</td>
+        <td>5</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+    </table>
+  </div>
+</div>

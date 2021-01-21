@@ -1,0 +1,61 @@
+.navbar .collapse ul{
+    position: absolute;
+    right: 25px;
+  }
+  
+  .navbar .collapse li{
+    padding: 20px;
+  }
+  
+  .collapse .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .collapse .navbar-nav .nav-item .nav-link:hover {
+    background-color: #750707;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .navbar-nav .collapse ul {
+    position: absolute;
+    left: 400px;
+  }
+  
+  .navbar-nav .collapse li{
+    padding: 20px;
+  }
+  
+.element{
+    font-size: 19px;
+}
+
+.dot{
+    font-size: 16px;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+
+
+table, tr, th, td {
+  border: 2px solid black;
+}
+
+.container-fluid{
+    padding: 100px;
+    margin: 0px;
+}
+
+.btn{
+    font-size: 20px;
+    width: 85px;
+    background-color: #750707;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #364073;
+    color: white;
+}

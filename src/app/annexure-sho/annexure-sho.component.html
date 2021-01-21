@@ -1,0 +1,6199 @@
+<p-sidebar
+  [style]="{ 'overflow-y': 'scroll' }"
+  [(visible)]="visibleSidebar1"
+  [baseZIndex]="10000"
+>
+  <!--  <h1 style="font-weight:normal"></h1> -->
+  <p-panelMenu [model]="items" [style]="{ width: '200px' }"></p-panelMenu>
+</p-sidebar>
+<button
+  type="button"
+  class="btn mb-3"
+  (click)="visibleSidebar1 = true"
+  style="color: white; background-color: #353e73"
+>
+  Annexures List
+</button> <br>
+<button type="button" class="btn btn-info mb-3" routerLink="/organize-staff">Deploy Staff</button> <br>
+<button type="button" class="btn btn-info mb-3" routerLink="/request-staff">Request Staff</button> <br>
+<button type="button" class="btn btn-info">Report</button>
+
+<!-- Tables -->
+<div style="text-align: center">
+  <!-- Annexure-I -->
+  <div *ngIf="Table1" class="container mt-4">
+    <h4>
+      <u><b>ANNEXURE-I</b></u>
+    </h4>
+    <h4>
+      <u>
+        Bandobust provide at ganesh Mandapams and to Accompany the vehicles
+        during the procession
+      </u>
+    </h4>
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>No.Of Ganesh Idols Installed</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5 class="pl-2">
+          No.Of Ganesh Idols Permitted <br />
+          procession on final day
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- Annexure -II -->
+  <div *ngIf="Table2" class="container">
+    <h3>
+      <b><u>ANNEXURE-II</u></b>
+    </h3>
+    <h3><u>Bundobust Provided at sensitive Pickets</u></h3>
+
+    <div class="row pt-5" >
+      <div class="col-md-6">
+        <h5>Location Of The Picket</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <select class="form-control">
+            <option value="">Select..</option>
+            <option value="">Srinivas nagar</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h5 class="pl-2">Incharge Name</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h5 class="pl-2">Rank</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h5 class="pl-2">Designation</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h5 class="pl-2">Mobile Number</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- Annexure -III -->
+  <div *ngIf="Table3" class="container">
+    <h3>
+      <b><u>ANNEXURE-III</u></b>
+    </h3>
+    <h3><u>Bundobust Provided at Hyper sensitive Pickets</u></h3>
+
+    <div class="row pt-5" >
+      <div class="col-md-6">
+        <h5>Location Of The Picket</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <select class="form-control">
+            <option value="">Select..</option>
+            <option value="">Srinivas nagar</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h5 class="pl-2">Incharge Name</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h5 class="pl-2">Rank</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h5 class="pl-2">Designation</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h5 class="pl-2">Mobile Number</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- Annexure -IV-->
+  <div *ngIf="Table4" class="container">
+    <h3>
+      <b><u>ANNEXURE-IV</u></b>
+    </h3>
+    <h3><u>Mobile Parties</u></h3>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>Mobile Party</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <select class="form-control">
+            <option value="">-Select-</option>
+            <option value="">Patrol Car-1</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <h4>Route/Area Of mobile party</h4>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          From
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+     <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          To
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- ANNEXURE-V -->
+  <div *ngIf="Table5" class="container">
+    <h5>
+      <b><u>ANNEXURE-V</u></b>
+    </h5>
+    <h5><u>STRIKING FORCE</u></h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>Loaction Of The Striking Force</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- ANNEXURE-VI -->
+  <div *ngIf="Table6" class="container">
+    <h3>Data not given</h3>
+  </div>
+  <!-- ANNEXURE-VII -->
+  <div *ngIf="Table7" class="container">
+    <h5>
+      <b><u>ANNEXURE-VII</u></b>
+    </h5>
+    <h5>
+      <u>
+        VEHICLE CHECKING POINTS-STENGTH (IT WILL BE MANNED WITH THE PICKET
+        STRENGTH )
+      </u>
+    </h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>Location Of The Vehicle Checking Point</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- ANNEXURE-VIII -->
+  <div *ngIf="Table8" class="container">
+    <h5>
+      <b><u>ANNEXURE-VIII</u></b>
+    </h5>
+    <h5><u>FOOT PATROLLING TEAMS</u></h5>
+    <div class="row pt-5" style="margin-left: 100px">
+      <h4>Route/Area of Foot Partrolling Teams</h4>
+      <div class="col-md-6">
+        <h5>From</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          To
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- ANNEXURE-IX -->
+  <div *ngIf="Table9" class="container">
+    <h5>
+      <b><u>ANNEXURE-IX</u></b>
+    </h5>
+    <h5><u>ROUTE BANDOBUST</u></h5>
+    <h5>
+      <u>ROUTE BANDOBUST-JUNCION MANAGEMENT PROCESSION ROUTE</u>
+    </h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <h4>Sector</h4>
+      <div class="col-md-6">
+        <h5>From</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          To
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- ANNEXURE-IX-A -->
+  <div *ngIf="Table9A" class="container">
+    <h5>
+      <b><u>ANNEXURE-IX-A</u></b>
+    </h5>
+    <h5><u>ALTERNATE ROUTE BANDOBUST-STRENGTH</u></h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <h4>Sector</h4>
+      <div class="col-md-6">
+        <h5>From</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          To
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- ANNEXURE-X -->
+  <div *ngIf="Table10" class="container">
+    <h5>
+      <b><u>ANNEXURE-X</u></b>
+    </h5>
+    <h5><u>ROOF TOP BANDOBUST</u></h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-4">
+        <h5>Location Of The Posting</h5>
+      </div>
+      <div class="col-md-5">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+      <div class="col-md-3">
+        <button type="button" class="btn btn-info">Add</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- ANNEXURE-XI -->
+  <div *ngIf="Table11" class="container">
+    <h5>
+      <b><u>ANNEXURE-XI</u></b>
+    </h5>
+    <h5><u>BANDOBUST AT BARRICADING POINTS</u></h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-4">
+        <h5>Location Of The Posting</h5>
+      </div>
+      <div class="col-md-5">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+      <div class="col-md-3">
+        <button type="button" class="btn btn-info">Add</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- ANNEXURE-XII -->
+  <div *ngIf="Table12" class="container">
+    <h5>
+      <b><u>ANNEXURE-XII</u></b>
+    </h5>
+    <h5><u>PUSHING PARTIES</u></h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <h4>Pushing Party</h4>
+      <div class="col-md-6">
+        <h5>From</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          To
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+
+  <!-- ANNEXURE-XIII -->
+  <div *ngIf="Table13" class="container">
+    <h5>
+      <b><u>ANNEXURE-XIII</u></b>
+    </h5>
+    <h5>
+      <u>BANDOBUST PROVIDED AT IMMERSION POINTS</u>
+    </h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-4">
+        <h5>Location of the Immersion Point</h5>
+      </div>
+      <div class="col-md-5">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+      <div class="col-md-">
+        <button type="button" class="btn btn-info">Add</button>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Incharge Name
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Rank
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Designation
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Mobile Number
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- ANNEXURE-XIV -->
+  <div *ngIf="Table14" class="container">
+    <h5>
+      <b><u>ANNEXURE-XIV</u></b>
+    </h5>
+    <h5><u>LOCATION OF VIDEO CAMERAS</u></h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-4">
+        <h5>Location Of The Video Cameras</h5>
+      </div>
+      <div class="col-md-5">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+      <div class="col-md-3">
+        <button type="button" class="btn btn-info">Add</button>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Incharge Name
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Rank
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Designation
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Mobile Number
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ANNEXURE-XV -->
+  <div *ngIf="Table15" class="container">
+    <h5>
+      <b><u>ANNEXURE-XV</u></b>
+    </h5>
+    <h5><u>DATA RECORDING POINTS</u></h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>No.Of Ganesh Idols Installed</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5 class="pl-2">
+          No.Of Ganesh Idols Permitted <br />
+          procession on final day
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <!-- ANNEXURE-XV (sub) -->
+  <div *ngIf="Table15" class="container">
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-4">
+        <h5>Location</h5>
+      </div>
+      <div class="col-md-5">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+      <div class="col-md-3">
+        <button type="button" class="btn btn-info">Add</button>
+      </div>
+    </div>
+  <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Incharge Name
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Rank
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Designation
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Mobile Number
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ANNEXURE-XVI -->
+  <div *ngIf="Table16" class="container">
+    <h5>
+      <b><u>ANNEXURE-XVI</u></b>
+    </h5>
+    <h5><u>LOCATION OF GENERATORS</u></h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-4">
+        <h5>Location Of The Generator</h5>
+      </div>
+      <div class="col-md-5">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+      <div class="col-md-3">
+        <button type="button" class="btn btn-info">Add</button>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Incharge Name
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Rank
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Designation
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Mobile Number
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div *ngIf="Table16" class="container">
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- ANNEXURE-XVII -->
+  <div *ngIf="Table17" class="container">
+    <h5>
+      <b><u>ANNEXURE-XVII</u></b>
+    </h5>
+    <h5><u>LOCATION OF MOBILE CRANES </u></h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>Location Of The Mobile Crane</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          No.Of Mobile Cranes
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Incharge Name
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Rank
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Designation
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Mobile Number
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ANNEXURE-XVIII -->
+  <div *ngIf="Table18" class="container">
+    <h5>
+      <b><u>ANNEXURE-XVIII</u></b>
+    </h5>
+    <h5><u>WATCH TOWERS</u></h5>
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>Location Of The Watch Tower</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Incharge Name
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Rank
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Designation
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Mobile Number
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- ANNEXURE-XIX -->
+  <div *ngIf="Table19" class="container">
+    <h5>
+      <b><u>ANNEXURE-XIX</u></b>
+    </h5>
+    <h5>
+      <u>STATEMENT OF VIDEO CAMERAS TO BE HIRED P.S WISE</u>
+    </h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>No.Of Video Cameras To Be Hired On Final Immersion</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ANNEXURE-XX -->
+  <div *ngIf="Table20" class="container">
+    <h5>
+      <b><u>ANNEXURE-XX</u></b>
+    </h5>
+    <h5>
+      <u>STATEMENT OF PRIVATE VEHICLES HIRED P.S WISE</u>
+    </h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <h4>No.Of Private vehicles Hired</h4>
+      <div class="col-md-6">
+        <h5>Vans</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Car/Jeeps
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Autos
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Tata Ace Autos
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ANNEXURE-XXI -->
+
+  <div *ngIf="Table21" class="container">
+    <h5>
+      <b><u>ANNEXURE-XXI</u></b>
+    </h5>
+    <h5>
+      <u>PLACES WHERE PUBLIC ADDRESS SYSTEM IS PROVIDED</u>
+    </h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>Location Of The P.A System</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Incharge Name
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Rank
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Designation
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Mobile Number
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <br />
+
+  <!-- ANNEXURE-XXII -->
+  <div *ngIf="Table22" class="container">
+    <h5>
+      <b><u>ANNEXURE-XXII</u></b>
+    </h5>
+    <h5>
+      <u>LOCATION OF SENIOR OFFICERS OF AND ABOVE THE RANK OF DSsP</u>
+    </h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>Name</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+         Designation
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>Mobile Number</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Location
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>Area Of Responsibility</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Police Station
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>Division</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Wireless Set Available or Not
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ANNEXURE-XXIII -->
+  <div *ngIf="Table23" class="container">
+    <h5>
+      <b><u>ANNEXURE-XXIII</u></b>
+    </h5>
+    <h5>
+      <u>ABSTRACT OF STRENGTH DEPLOYED-ANNEXURE-WISE</u>
+    </h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>Annexure</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>
+          Description
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- ANNEXURE-XXIV -->
+  <div *ngIf="Table24" class="container">
+    <h5>
+      <b><u>ANNEXURE-XXIV</u></b>
+    </h5>
+    <h5><u>FORCE HOW DRAWNs</u></h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>Description</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>
+                  Wpc/ <br />
+                  Whg
+                </h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Available</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="card">
+          <h4 class="pt-3">Strength Required</h4>
+          <hr />
+          <form class="pt-3">
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Addl.sp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>DSsp</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>CI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>SI</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-4 ml-2">
+              <div class="col-md-4">
+                <h5>Asi/Hc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Pc</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>HG</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Wpc/ <br />Whg</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row ml-2 mb-4">
+              <div class="col-md-4">
+                <h5>Armed Sections</h5>
+              </div>
+              <div class="col-md-7">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5">
+      <button type="reset" class="btn btn-info">Reset</button>
+      <button type="submit" class="btn btn-info ml-5">Submit</button>
+    </div>
+  </div>
+  <!-- ANNEXURE-XXV -->
+
+  <div *ngIf="Table25" class="container">
+    <h5>
+      <b><u>ANNEXURE-XXV</u></b>
+    </h5>
+    <h5><u>ABSTRACT</u></h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>No.Of Ganesh Idols Installed</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5 class="pl-2">
+          No.Of Ganesh Idols Permitted <br />
+          procession on final day
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ANNEXURE-XXV(A)   -->
+  <div *ngIf="Table25A" class="container">
+    <h5>
+      <b><u>ANNEXURE-XXV(A)</u></b>
+    </h5>
+    <h5><u>ABSTRACT</u></h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>No.Of Ganesh Idols Installed</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5 class="pl-2">
+          No.Of Ganesh Idols Permitted <br />
+          procession on final day
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ANNEXURE-XXV(B) -->
+  <div *ngIf="Table25B" class="container">
+    <h5>
+      <b><u>ANNEXURE-XXV(B)</u></b>
+    </h5>
+    <h5><u>ABSTRACT</u></h5>
+
+    <div class="row pt-5" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5>No.Of Ganesh Idols Installed</h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-left: 100px">
+      <div class="col-md-6">
+        <h5 class="pl-2">
+          No.Of Ganesh Idols Permitted <br />
+          procession on final day
+        </h5>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group col-xl-5">
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

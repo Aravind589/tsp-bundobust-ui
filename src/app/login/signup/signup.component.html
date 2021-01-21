@@ -1,0 +1,300 @@
+<!------------------------------------ BODY ----------------------------------------->
+
+<section class="main">
+  <div class="container pt-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div id="banner1">
+          <img
+            class="bottom"
+            src="../../../assets/images/telanganalogo.png"
+            width="330"
+            height="330"
+            alt="TS_Logo"
+          />
+          <img
+            class="top"
+            src="../../../assets/images/KCR.cms"
+            width="350"
+            height="350"
+            alt="TS_Logo"
+          />
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card w3-animate-zoom" style="right: 50px; top: 50px">
+          <div class="card-body">
+            <img
+              src="../../../assets/images/logo1.png"
+              width="50px"
+              height="50px"
+              alt="Police"
+              class="rounded mx-auto d-block"
+            />
+            <h4 class="text-center">Sign up To Your Account</h4>
+            <hr />
+            <form [formGroup]="registerForm">
+              <div class="form-group">
+                <input
+                  type="firstName"
+                  class="form-control form-control-lg"
+                  formControlName="firstName"
+                  id="firstName"
+                  placeholder="First Name *"
+                  [ngClass]="{'is-invalid':registerForm.get('firstName').touched && registerForm.get('firstName').invalid}"
+                />
+                <div *ngIf="registerForm.get('firstName').touched && registerForm.get('firstName').invalid" class="invalid-feedback">
+                  <div *ngIf="registerForm.get('firstName').errors.required" style="color: red">
+                    First Name is required
+                  </div>
+                  <div *ngIf="registerForm.get('firstName').errors.firstName">
+                    First Name must be a valid Name
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="lastName"
+                  class="form-control form-control-lg"
+                  formControlName="lastName"
+                  id="lastName"
+                  placeholder="Last Name *"
+                  [ngClass]="{
+                    'is-invalid':
+                      registerForm.get('lastName').touched &&
+                      registerForm.get('lastName').invalid
+                  }"
+                />
+                <div
+                  *ngIf="
+                    registerForm.get('lastName').touched &&
+                    registerForm.get('lastName').invalid
+                  "
+                  class="invalid-feedback"
+                >
+                  <div
+                    *ngIf="registerForm.get('lastName').errors.required"
+                    style="color: red">
+                    Last Name is required
+                  </div>
+                  <div *ngIf="registerForm.get('lastName').errors.lastName">
+                    Last Name must be a valid Name
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div *ngIf="registerForm.get('role').touched && registerForm.get('role').invalid" class="invalid-feedback">
+                  <div *ngIf="registerForm.get('role').errors.required">
+                    Role is required
+                  </div>
+                  <div *ngIf="registerForm.get('role').errors.role">
+                    Role must be a valid
+                  </div>
+                </div>
+                <select class="form-control form-control-lg" formControlName="role" name="role"
+                  [ngClass]="{'is-invalid':registerForm.get('role').touched && registerForm.get('role').invalid}">
+                  <option value="">Select Role</option>
+                  <option>DGP</option>
+                  <option>ADGP</option>
+                  <option>IGP</option>
+                  <option>DIG</option>
+                  <option>CP</option>
+                  <option>Jt.CP</option>
+                  <option>Addl.CP</option>
+                  <option>DCP</option>
+                  <option>SSP</option>
+                  <option>SP</option>
+                  <option>Addl.SP</option>
+                  <option>Asst.CP</option>
+                  <option>DSP</option>
+                  <option>SHO</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <div *ngIf="registerForm.get('officeType').touched && registerForm.get('officeType').invalid" class="invalid-feedback">
+                  <div *ngIf="registerForm.get('officeType').errors.required">
+                    officeType is required
+                  </div>
+                  <div *ngIf="registerForm.get('officeType').errors.officeType">
+                    officeType must be a valid
+                  </div>
+                </div>
+                <select class="form-control form-control-lg" formControlName="officeType" name="officeType"
+                  [ngClass]="{'is-invalid':registerForm.get('officeType').touched && registerForm.get('officeType').invalid}">
+                  <option value="">Select officeType</option>
+                  <option>District</option>
+                  <option>Commissionerate</option>
+                </select>
+              </div>
+              <!-- <div class="form-group">
+                <div *ngIf="registerForm.get('districtName').touched && registerForm.get('districtName').invalid" class="invalid-feedback">
+                  <div *ngIf="registerForm.get('districtName').errors.required">
+                    District is required
+                  </div>
+                  <div *ngIf="registerForm.get('districtName').errors.districtName">
+                    District must be a valid
+                  </div>
+                </div>
+                <select class="form-control form-control-lg" formControlName="districtName" name="districtName"
+                  [ngClass]="{'is-invalid':registerForm.get('districtName').touched && registerForm.get('districtName').invalid}">
+                  <option value="">Select District</option>
+                  <option>Cyberabad</option>
+                  <option>Hyderabad</option>
+                  <option>Medchal</option>
+                </select>
+              </div> -->
+              <div class="form-group">
+                <div *ngIf="registerForm.get('sdpoName').touched && registerForm.get('sdpoName').invalid" class="invalid-feedback">
+                  <div *ngIf="registerForm.get('sdpoName').errors.required">
+                    SDPO/Zone is required
+                  </div>
+                  <div *ngIf="registerForm.get('sdpoName').errors.sdpoName">
+                    SDPO/Zone must be a valid
+                  </div>
+                </div>
+                <select class="form-control form-control-lg" formControlName="sdpoName" name="sdpoName"
+                  [ngClass]="{'is-invalid':registerForm.get('sdpoName').touched && registerForm.get('sdpoName').invalid}">
+                  <option value="">Select SDPO/Zone</option>
+                  <option>Madhapur</option>
+                  <option>Balanagar</option>
+                  <option>Punjagutta</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <div *ngIf="registerForm.get('divisionName').touched && registerForm.get('divisionName').invalid" class="invalid-feedback">
+                  <div *ngIf="registerForm.get('divisionName').errors.required">
+                    Division is required
+                  </div>
+                  <div *ngIf="registerForm.get('divisionName').errors.divisionName">
+                    Division must be a valid
+                  </div>
+                </div>
+                <select class="form-control form-control-lg" formControlName="divisionName" name="divisionName"
+                  [ngClass]="{'is-invalid':registerForm.get('divisionName').touched && registerForm.get('divisionName').invalid}">
+                  <option value="">Select Division</option>
+                  <option>Jeedimetla</option>
+                  <option>Balanagar</option>
+                  <option>Jagathgiri Gutta</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <div *ngIf="registerForm.get('circleName').touched && registerForm.get('circleName').invalid" class="invalid-feedback">
+                  <div *ngIf="registerForm.get('circleName').errors.required">
+                    Circle is required
+                  </div>
+                  <div *ngIf="registerForm.get('circleName').errors.circleName">
+                    Circle must be a valid
+                  </div>
+                </div>
+                <select class="form-control form-control-lg" formControlName="circleName" name="circleName"
+                  [ngClass]="{'is-invalid':registerForm.get('circleName').touched && registerForm.get('circleName').invalid}">
+                  <option value="">Select Circle</option>
+                  <option>Jeedimetla</option>
+                  <option>Balanagar</option>
+                  <option>Jagathgiri Gutta</option>
+                </select>
+              </div>
+              <!-- <div class="form-group">
+                <div *ngIf="registerForm.get('policeStationName').touched && registerForm.get('policeStationName').invalid" class="invalid-feedback">
+                  <div *ngIf="registerForm.get('policeStationName').errors.required">
+                    Police Station is required
+                  </div>
+                  <div *ngIf="registerForm.get('policeStationName').errors.policeStationName">
+                    Police Station must be a valid
+                  </div>
+                </div>
+                <select class="form-control form-control-lg" formControlName="policeStationName" name="policeStationName"
+                  [ngClass]="{'is-invalid':registerForm.get('policeStationName').touched && registerForm.get('policeStationName').invalid}">
+                  <option value="">Select Police Station</option>
+                  <option>Jeedimetla</option>
+                  <option>Balanagar</option>
+                  <option>Jagathgiri Gutta</option>
+                </select>
+              </div> -->
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  formControlName="email"
+                  id="email"
+                  placeholder="Email *"
+                  [ngClass]="{'is-invalid':registerForm.get('email').touched && registerForm.get('email').invalid}"
+                />
+                <div *ngIf="registerForm.get('email').touched && registerForm.get('email').invalid" class="invalid-feedback">
+                  <div *ngIf="registerForm.get('email').errors.required" style="color: red">
+                    Email is required
+                  </div>
+                  <div *ngIf="registerForm.get('email').errors.email">
+                    Email must be a valid
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="id"
+                  class="form-control form-control-lg"
+                  formControlName="id"
+                  id="id"
+                  placeholder="Id No *"
+                  [ngClass]="{'is-invalid':registerForm.get('id').touched && registerForm.get('id').invalid}"
+                />
+                <div *ngIf="registerForm.get('id').touched && registerForm.get('id').invalid" class="invalid-feedback">
+                  <div *ngIf="registerForm.get('id').errors.required" style="color: red">
+                    Id No is required
+                  </div>
+                  <div *ngIf="registerForm.get('id').errors.id">
+                    Id No must be a valid Name
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control form-control-lg"
+                  formControlName="password"
+                  id="password"
+                  placeholder="Password *"
+                  [ngClass]="{'is-invalid':registerForm.get('password').touched && registerForm.get('password').invalid}"
+                />
+                <div *ngIf="registerForm.get('password').touched && registerForm.get('password').invalid" class="invalid-feedback">
+                  <div *ngIf="registerForm.get('password').errors.required" style="color: red">
+                    Password is required
+                  </div>
+                  <div *ngIf="registerForm.get('password').errors.password">
+                    Password must be a valid Name
+                  </div>
+                </div>
+              </div>
+              <!-- [disabled]="registerForm.valid" -->
+              <div class="text-center">
+                <button class="btn btn-primary pb-2 btn-lg"  (click)="signup()">
+                  SIGN UP
+                </button>
+              </div>
+            </form>
+            <br />
+            <p class="text-center">Already Have an account? <a routerLink="../signin/">Sign In</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div id="banner2">
+          <img
+            class="bottom"
+            src="../../../assets/images/logo1.png"
+            width="380"
+            height="380"
+            alt="TS_Logo"
+          />
+          <img
+            class="top"
+            src="../../../assets/images/DGP.jpg"
+            width="350"
+            height="350"
+            alt="TS_Logo"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

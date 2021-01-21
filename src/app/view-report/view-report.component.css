@@ -1,0 +1,42 @@
+img{
+    height: 55px;
+    width: 65px;
+}
+
+li{
+    margin-right: 25px;
+}
+
+a{
+    font-size: 20px;
+}
+
+.collapse .navbar-nav .nav-item .nav-link{
+    color: rgb(88, 77, 77);
+}
+
+.collapse .navbar-nav .nav-item .nav-link:hover{
+    background-color: #24a0ed;
+    border-radius: 5px;
+    color: white;
+}
+
+.element{
+    font-size: 19px;
+}
+
+.dot{
+    font-size: 16px;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+table, tr, th, td {
+  border: 2px solid black;
+}
+
+h1{
+    background-color: #24a0ed;
+    height: 70px;
+    color: white;
+}
+

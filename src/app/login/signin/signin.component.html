@@ -1,0 +1,82 @@
+<section class="main">
+  <div class="container-fluid pt-5">
+    <div class="row">
+      <div class="col-xs-12 col-md-4 col-md-offset-3">
+        <div id="banner1">
+          <img
+            class="bottom"
+            src="../../../assets/images/telanganalogo.png"
+            width="330"
+            height="330"
+            alt="TS_Logo"
+          />
+          <img
+            class="top"
+            src="../../../assets/images/KCR.cms"
+            width="350"
+            height="350"
+            alt="TS_Logo"
+          />
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4 col-md-offset-3">
+        <div *ngIf="isLoading" style="text-align: center;">
+          <app-loading-spinner></app-loading-spinner>
+        </div>
+        <form #signinForm="ngForm" (ngSubmit)="onSubmit(signinForm)" *ngIf="!isLoading">
+          <div class="card w3-animate-zoom">
+            <div class="card-body">
+              <img src="../../../assets/images/logo1.png" class="rounded mx-auto d-block" width="50" height="50" alt="police"/>
+              <br />
+              <h4 class="text-center">Sign In To Your Account</h4>
+              <hr />
+              <div class="alert alert-danger" *ngIf="error">
+                <p>{{ error }}</p>
+              </div>
+              <div class="form-group">
+                <input type="id" class="form-control form-control-lg" id="id" placeholder="Id No *" 
+                  ngModel name="id" required id
+                />
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control form-control-lg" id="password" placeholder="Password *"
+                  ngModel name="password" required minlength="6"
+                />
+              </div> <br>
+              <div class="text-center">
+                <button class="btn btn-primary btn-lg" [disabled]="!signinForm.valid">
+                  SIGN IN
+                </button>
+                <button class="btn btn-primary btn-lg ml-5" (click)="signup()">
+                  SIGN UP
+                </button>
+              </div> <br>
+              <h5>
+                <a routerLink="" class="text-center pb-3">Forgot your password?</a>
+              </h5>
+              <br>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-xs-12 col-md-4 col-md-offset-3">
+        <div id="banner2">
+          <img
+            class="bottom"
+            src="../../../assets/images/logo1.png"
+            width="380"
+            height="380"
+            alt="TS_Logo"
+          />
+          <img
+            class="top"
+            src="../../../assets/images/DGP.jpg"
+            width="350"
+            height="350"
+            alt="TS_Logo"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

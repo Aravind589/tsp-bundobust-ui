@@ -1,0 +1,348 @@
+<div class="border-right sidenav">
+  <div class="list-group list-group-flush">
+    <a (click)="Sectors()">Sectors</a>
+    <a (click)="SensitivePickets()">Sensitive Pickets</a>
+    <a (click)="HyperSensitivePickets()">Hyper Sensitive</a>
+    <a (click)="ImmersionPoints()">Immersion Points</a>
+    <a (click)="MobileParties()">Mobile Parties</a>
+    <a (click)="Patrolcars()">Patrol cars</a>
+    <a (click)="BlueColts()">Blue Colts</a>
+  </div>
+</div>
+<div style="text-align: center">
+  <div class="container" *ngIf="sectors">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card w3-animate-zoom">
+          <div class="card-body">
+            <form>
+              <h1 class=""><b>Sectors</b></h1><hr><br>
+              <div class="form-group mt-3">
+                <input
+                  id="sectorName"
+                  type="sectorName"
+                  class="form-control form-control-lg"
+                  formControlName="sectorName"
+                  placeholder="Sector Name *"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="InchargeName"
+                  class="form-control form-control-lg"
+                  formControlName="InchargeName"
+                  placeholder="Incharge Name *"
+                />
+                <div class="text-center">
+                  <button class="btn btn-primary mt-3">
+                    Add
+                  </button>
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <input
+                  type="AreaName"
+                  class="form-control form-control-lg"
+                  formControlName="AreaName"
+                  placeholder="Area I *"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="AreaName"
+                  class="form-control form-control-lg"
+                  formControlName="AreaName"
+                  placeholder="Area II *"
+                />
+                <button class="btn btn-primary mt-2" style="margin-left: 87%">
+                  Add
+                </button>
+              </div> -->
+              <div class="text-right">
+                <button
+                  class="btn btn-primary mt-2"
+                  (click)="SensitivePickets()"
+                >
+                  Next
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" *ngIf="hyperSensitivePickets">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card w3-animate-zoom">
+          <div class="card-body">
+            <form>
+              <h1><b>Hyper Sensitive Pickets</b></h1>
+              <hr><br>
+              <div class="form-group mt-3">
+                <input
+                  type="HyperPicketName"
+                  class="form-control form-control-lg"
+                  formControlName="HyperPicketName"
+                  placeholder=" Hyper Sensitive Picket I *"
+                />
+                <div class="text-center">
+                  <button class="btn btn-primary mt-3">
+                    Add
+                  </button>
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <input
+                  type="HyperPicketName2"
+                  class="form-control form-control-lg"
+                  formControlName="HyperPicketName2"
+                  placeholder="Sensitive Picket II *"
+                /> 
+              </div> -->
+              <div class="text-right">
+                <button
+                  class="btn btn-primary mt-2"
+                  (click)="ImmersionPoints()"
+                >
+                  Next
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" *ngIf="sensitivePickets">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card w3-animate-zoom">
+          <div class="card-body">
+            <form>
+              <h1><b>Sensitive Pickets</b></h1><hr><br>
+              <div class="form-group mt-3">
+                <input
+                  type="PicketName"
+                  class="form-control form-control-lg"
+                  formControlName="PicketName"
+                  placeholder=" Sensitive Picket I *"
+                />
+                <div class="text-center">
+                  <button class="btn btn-primary mt-3">
+                    Add
+                  </button>
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <input
+                  type="PicketName2"
+                  class="form-control form-control-lg"
+                  formControlName="PicketName2"
+                  placeholder="Sensitive Picket II *"
+                />
+                <button class="btn btn-primary mt-2" style="margin-left: 87%">
+                  Add
+                </button>
+              </div> -->
+              <div class="text-right">
+                <button
+                  class="btn btn-primary mt-2"
+                  (click)="HyperSensitivePickets()"
+                >
+                  Next
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" *ngIf="immersionPoints">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card w3-animate-zoom">
+          <div class="card-body">
+            <form>
+              <h1><b>Immersion Points</b></h1>
+              <div class="form-group mt-3">
+                <input
+                  type="immersionPoints"
+                  class="form-control form-control-lg"
+                  formControlName="immersionPoints"
+                  placeholder="Immersion Points I *"
+                />
+                <div class="text-center">
+                  <button class="btn btn-primary mt-3">
+                    Add
+                  </button>
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <input
+                  type="immersionPoint2"
+                  class="form-control form-control-lg"
+                  formControlName="immersionPoint2"
+                  placeholder="immersion Point II *"
+                />
+                <button class="btn btn-primary mt-2" style="margin-left: 87%">
+                  Add
+                </button>
+              </div> -->
+              <div class="text-right">
+                <button
+                  class="btn btn-primary mt-2"
+                  (click)="MobileParties()"
+                >
+                  Next
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" *ngIf="mobileParties">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card w3-animate-zoom">
+          <div class="card-body">
+            <form>
+              <h1><b>Mobile Parties</b></h1>
+              <div class="form-group mt-3">
+                <input
+                  type="mobileParties"
+                  class="form-control form-control-lg"
+                  formControlName="mobileParties"
+                  placeholder="Mobile Parties I *"
+                />
+                <div class="text-center">
+                  <button class="btn btn-primary mt-3">
+                    Add
+                  </button>
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <input
+                  type="mobileParties2"
+                  class="form-control form-control-lg"
+                  formControlName="mobileParties2"
+                  placeholder="Mobile Parties II *"
+                />
+                <button class="btn btn-primary mt-2" style="margin-left: 87%">
+                  Add
+                </button>
+              </div> -->
+              <div class="text-right">
+                <button
+                  class="btn btn-primary mt-2"
+                  (click)="Patrolcars()"
+                >
+                  Next
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" *ngIf="patrolcars">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card w3-animate-zoom">
+          <div class="card-body">
+            <form>
+              <h1><b>Patrol cars</b></h1>
+              <div class="form-group mt-3">
+                <input
+                  type="patrolcars"
+                  class="form-control form-control-lg"
+                  formControlName="patrolcar"
+                  placeholder="Patrol Cars I *"
+                />
+                <div class="text-center">
+                  <button class="btn btn-primary mt-3">
+                    Add
+                  </button>
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <input
+                  type="patrolcars2"
+                  class="form-control form-control-lg"
+                  formControlName="patrolcar2"
+                  placeholder="Patrol Cars II *"
+                />
+                <button class="btn btn-primary mt-2" style="margin-left: 87%">
+                  Add
+                </button>
+              </div> -->
+              <div class="text-right">
+                <button
+                  class="btn btn-primary mt-2"
+                  (click)="BlueColts()"
+                >
+                  Next
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" *ngIf="blueColts">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card w3-animate-zoom">
+          <div class="card-body">
+            <form>
+              <h1><b>Blue Colts</b></h1>
+              <div class="form-group mt-3">
+                <input
+                  type="blueColts"
+                  class="form-control form-control-lg"
+                  formControlName="blueColts"
+                  placeholder="Bike I *"
+                />
+                <div class="text-center">
+                  <button class="btn btn-primary mt-3">
+                    Add
+                  </button>
+                </div>
+              </div>
+              <!-- <div class="form-group">
+                <input
+                  type="blueColts2"
+                  class="form-control form-control-lg"
+                  formControlName="blueColts2"
+                  placeholder="Bike II *"
+                />
+                <button class="btn btn-primary mt-2" style="margin-left: 87%">
+                  Add
+                </button>
+              </div> -->
+              <div class="form-group">
+                <button
+                  class="btn btn-primary mt-3"
+                  style="margin-left: 0%"
+                  (click)="onNext()"
+                >
+                  Next
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

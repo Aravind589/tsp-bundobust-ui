@@ -1,0 +1,259 @@
+<div class="container-fluid pt-5">
+    <table class="table text-center">
+        <thead>
+            <tr class="element">
+                <th>Event Id</th>
+                <th>Event Name</th>
+                <th>District</th>
+                <th>SDPO</th>
+                <th>Circle</th>
+                <th>Police Station</th>
+                <th>Depolyed Staff</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="dot">
+                <td>TS0125</td>
+                <td>Ganesh Bandobast</td>
+                <td>Ranga Reddy</td>
+                <td>SDPO1</td>
+                <td>Circle1</td>
+                <td>Kukatpally</td>
+                <td>0</td>
+                <td>01-7-2020</td>
+                <td>15-07-2020</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container">
+    <div class="card">
+        <h2 class="text-center pt-2">Request to Allocate</h2>
+        <hr>
+        <form class="pt-3">
+            <div class="row  ml-2 mb-4">
+                <div class="col-md-4">
+                    <h5>SI</h5>
+                </div>
+                <div class="col-md-7">
+                    <h4>4</h4>
+                </div>
+            </div>
+            <div class="row  ml-2 mb-4">
+                <div class="col-md-4">
+                    <h5>ASI</h5>
+                </div>
+                <div class="col-md-7">
+                    <h4>5</h4>
+
+                </div>
+            </div>
+            <div class="row  ml-2 mb-4">
+                <div class="col-md-4">
+                    <h5>HC</h5>
+                </div>
+                <div class="col-md-7">
+                    <h4>3</h4>
+
+                </div>
+            </div>
+            <div class="row  ml-2 mb-4">
+                <div class="col-md-4">
+                    <h5>PC</h5>
+                </div>
+                <div class="col-md-7">
+                    <h4>10</h4>
+
+                </div>
+            </div>
+            <div class="row  ml-2 mb-4">
+                <div class="col-md-4">
+                    <h5>Homeguard</h5>
+                </div>
+                <div class="col-md-7">
+                    <h4>2</h4>
+
+                </div>
+            </div>
+            <!-- <div class="row  ml-2 mb-4">
+                <div class="col-md-4">
+                    <h5>Any</h5>
+                </div>
+                <div class="col-md-7">
+                    <select id="" class="form-control form-control-lg">
+                        <option value="">Select</option>
+                        <option value="">...</option>
+                    </select>
+                </div>
+            </div> -->
+        </form>
+        <hr>
+        <span>
+            <button type="button" class="btn btn-primary mb-4"
+                style="border-radius: 10px; font-size: 16px; margin-left: 150px;" (click)="back()">Back</button>
+            <button type="button" class="btn btn-primary mb-4 ml-5" style="border-radius: 10px; font-size: 16px;" data-toggle="collapse"
+                data-target="#demo">Allocate</button>
+        </span>
+    </div>
+</div><br><br>
+
+<div id="demo" class="collapse">
+    <div class="container-fluid pt-5">
+        <table class="table text-center mt-5">
+            <thead>
+                <tr class="element">
+                    <th>SNO</th>
+                    <th>Name</th>
+                    <th>Journal No</th>
+                    <th>Rank</th>
+                    <th>District</th>
+                    <th>SDPO</th>
+                    <th>Circle</th>
+                    <th>Police Station</th>
+                    <th>Mobile Number</th>
+                    <th>Status</th>
+                    <th>Allocate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="dot">
+                    <td>1</td>
+                    <td>Pidugu Ravi Krishna</td>
+                    <td>53987</td>
+                    <td>Inspector</td>
+                    <td>Cyberabad</td>
+                    <td>Madhapur</td>
+                    <td>KPHB</td>
+                    <td>KPHB</td>
+                    <td>9963586087</td>
+                    <td>Avaliable</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="dot">
+                    <td>2</td>
+                    <td>Malle Venkatesh</td>
+                    <td>84759</td>
+                    <td>SI</td>
+                    <td>Cyberabad</td>
+                    <td>Madhapur</td>
+                    <td>KPHB</td>
+                    <td>KPHB</td>
+                    <td>9346527635</td>
+                    <td>Avaliable</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="dot">
+                    <td>3</td>
+                    <td>Nune Raja Mahendra Reddy</td>
+                    <td>76940</td>
+                    <td>SI</td>
+                    <td>Cyberabad</td>
+                    <td>Madhapur</td>
+                    <td>KPHB</td>
+                    <td>KPHB</td>
+                    <td>7207285480</td>
+                    <td>Unavaliable</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="dot">
+                    <td>4</td>
+                    <td>Karnati Prabhu</td>
+                    <td>84635</td>
+                    <td>ASI</td>
+                    <td>Cyberabad</td>
+                    <td>Madhapur</td>
+                    <td>KPHB</td>
+                    <td>KPHB</td>
+                    <td>8500397712</td>
+                    <td>Avaliable</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="dot">
+                    <td>5</td>
+                    <td>Miryala Vamshi Krishna</td>
+                    <td>86473</td>
+                    <td>HC</td>
+                    <td>Cyberabad</td>
+                    <td>Madhapur</td>
+                    <td>KPHB</td>
+                    <td>KPHB</td>
+                    <td>9705708526</td>
+                    <td>Avaliable</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="dot">
+                    <td>6</td>
+                    <td>Repalle Murali Mohan</td>
+                    <td>93657</td>
+                    <td>HC</td>
+                    <td>Cyberabad</td>
+                    <td>Madhapur</td>
+                    <td>KPHB</td>
+                    <td>KPHB</td>
+                    <td>7036531431</td>
+                    <td>Unavailabe</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="dot">
+                    <td>7</td>
+                    <td>Manne Karunakar</td>
+                    <td>45987</td>
+                    <td>PC</td>
+                    <td>Cyberabad</td>
+                    <td>Madhapur</td>
+                    <td>KPHB</td>
+                    <td>KPHB</td>
+                    <td>9440568385</td>
+                    <td>Avaliable</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="dot">
+                    <td>8</td>
+                    <td>Padamsetti Rajesh</td>
+                    <td>19853</td>
+                    <td>PC</td>
+                    <td>Cyberabad</td>
+                    <td>Madhapur</td>
+                    <td>KPHB</td>
+                    <td>KPHB</td>
+                    <td>8297908992</td>
+                    <td>Unavailabe</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="dot">
+                    <td>9</td>
+                    <td>Basana Gopi Krishna</td>
+                    <td>40644</td>
+                    <td>PC</td>
+                    <td>Cyberabad</td>
+                    <td>Madhapur</td>
+                    <td>KPHB</td>
+                    <td>KPHB</td>
+                    <td>7981005660</td>
+                    <td>Unavailabe</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="dot">
+                    <td>10</td>
+                    <td>Vallabhaneni Radha Kishan</td>
+                    <td>38257</td>
+                    <td>Inspector</td>
+                    <td>Cyberabad</td>
+                    <td>Madhapur</td>
+                    <td>KPHB</td>
+                    <td>KPHB</td>
+                    <td>8096575925</td>
+                    <td>Available</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-primary mb-5" (click)="back()"
+            style="margin-right: 50px; margin-top: 50px; margin-left: 650px; border-radius: 30px; height: 50px; width: 120px;">Back</button>
+        <button type="button" class="btn btn-primary mb-5" (click)="submit()"
+            style="margin-right: 50px; margin-top: 50px; border-radius: 30px; height: 50px; width: 120px;">Submit</button>
+    </div>
+</div>

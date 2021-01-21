@@ -1,0 +1,21 @@
+.navbar{
+    background-image: linear-gradient(to bottom right, white, #F0F0F0);
+}
+
+li{
+    margin-right: 25px;
+}
+
+a{
+    font-size: 20px;
+}
+
+.collapse .navbar-nav .nav-item .nav-link{
+    color: rgb(88, 77, 77);
+}
+
+.collapse .navbar-nav .nav-item .nav-link:hover{
+    background-color: #24a0ed;
+    border-radius: 5px;
+    color: white;
+}

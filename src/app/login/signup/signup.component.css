@@ -1,0 +1,201 @@
+.police {
+    margin-left: 10px;
+    background-color: #750707;
+    color: white;
+    width: 96px;
+    height: 30px;
+  }
+  
+  .caption {
+    position: absolute;
+    margin-top: 68px;
+    margin-left: 250px;
+    color: #ba913d;
+  }
+
+  .navbar .collapse ul{
+    position: absolute;
+    right: 114px;
+  }
+  
+  .navbar .collapse li{
+    padding: 20px;
+  }
+  
+  .collapse .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .collapse .navbar-nav .nav-item .nav-link:hover {
+    background-color: #4d90fe;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .navbar-nav .collapse ul {
+    position: absolute;
+    left: 400px;
+  }
+  
+  .navbar-nav .collapse li{
+    padding: 20px;
+  }
+ 
+.main{
+    background-color: rgb(248, 249, 250);
+    position: relative;
+    min-height: 100vh;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    height: 70px;
+    background-color: #364073;
+}
+
+.text-center .btn{
+    margin-top: 15px;
+    background-color: #364073;
+    border-color: #364073;
+    font-family: Times New Roman;
+    height: 40px;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: Times New Roman;
+    color: white;
+    position: absolute;
+    margin-left: 520px;
+}
+
+.card{
+    box-shadow: 0 6px 12px 0 rgba(255, 252, 252, 0.912), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 470px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.card:hover{
+    -webkit-box-shadow: 18px 13px 41px 8px rgba(54,64,115,1);
+-moz-box-shadow: 18px 13px 41px 8px rgba(54,64,115,1);
+box-shadow: 18px 13px 41px 8px rgba(54,64,115,1);
+}
+
+/* img{
+    height: 100px;
+    width: 100px;
+} */
+
+h4{
+    /* margin-top: 10px; */
+    font-family: Times New Roman;
+}
+
+input{
+    font-family: 'Times New Roman', Times, serif;
+    /* border: 2px solid black; */
+}
+
+button{
+    font-family: Times New Roman;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.form-control{
+    margin-top: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type="checkbox"]{
+  width: 15px; 
+  height: 15px; 
+}
+
+#banner1{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    margin-top: 123px;
+    margin-left: -133px;
+}
+
+#banner1 img{
+    position: absolute;
+    -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+
+@keyframes banner1FadeInOut {
+    0% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+  }
+  
+  #banner1 img.top {
+  animation-name: banner1FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  }
+
+  #banner2{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    margin-top: 123px;
+    margin-left: 141px;
+}
+
+#banner2 img{
+    position: absolute;
+    -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+
+@keyframes banner2FadeInOut {
+    0% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+  }
+  
+  #banner2 img.top {
+  animation-name: banner2FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  }
+
+
+
+ 

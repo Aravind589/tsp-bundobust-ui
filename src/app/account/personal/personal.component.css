@@ -1,0 +1,52 @@
+.sidenav {
+  margin-top: 160px;
+  height: 100%;
+  width: 280px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #F0F0F0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  margin-top: 20px;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  padding-bottom: 25px;  
+  border-bottom: 1px solid rgba(100,100,100,0.3);
+}
+
+.sidenav a:hover {
+  color: #24a0ed;
+}
+
+.main {
+  padding-left: 340px; 
+  font-size: 20px; 
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+h3{
+  padding-top: 35px;
+  padding-left: 10px;
+}
+
+button{
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+input[type="checkbox"]{
+  width: 18px; 
+  height: 18px; 
+}

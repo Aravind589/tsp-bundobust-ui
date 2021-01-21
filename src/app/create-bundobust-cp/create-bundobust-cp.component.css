@@ -1,0 +1,38 @@
+.navbar {
+  background-image: linear-gradient(to bottom right, white, #f0f0f0);
+}
+
+.card {
+  margin: 0 auto;
+  width: 540px;
+  box-shadow: 0 6px 12px 0 rgba(255, 252, 252, 0.912),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+  width: 80px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+li {
+  margin-right: 25px;
+}
+
+a {
+  font-size: 20px;
+}
+
+.collapse .navbar-nav .nav-item .nav-link {
+  color: rgb(88, 77, 77);
+}
+
+.collapse .navbar-nav .nav-item .nav-link:hover {
+  background-color: #24a0ed;
+  border-radius: 5px;
+  color: white;
+}
+
+.col-md-1 {
+  padding-top: 4px;
+}

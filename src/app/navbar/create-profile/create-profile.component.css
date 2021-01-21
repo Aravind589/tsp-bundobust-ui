@@ -1,0 +1,42 @@
+.navbar {
+  background-image: linear-gradient(to bottom right, white, #f0f0f0);
+}
+
+h2 {
+  font-size: 360%;
+  font-family: Times New Roman;
+  color: rgb(22, 21, 21);
+}
+
+/* button {
+  height: 60px;
+  width: 180px;
+  font-weight: bold;
+  border-radius: 50px;
+} */
+
+li {
+  margin-right: 25px;
+}
+
+a {
+  font-size: 20px;
+}
+
+.collapse .navbar-nav .nav-item .nav-link {
+  color: rgb(88, 77, 77);
+}
+
+.collapse .navbar-nav .nav-item .nav-link:hover {
+  background-color: #24a0ed;
+  border-radius: 5px;
+  color: white;
+}
+
+button {
+  margin: 0 auto;
+  margin-top: 250px;
+  width: 190px;
+  height: 50px;
+  font-size: 25px;
+}

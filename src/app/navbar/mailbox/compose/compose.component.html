@@ -1,0 +1,93 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="../../../assets/images/logo1.png" style="height: 55px; width: 65px;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+                <a class="nav-link" href="../home/"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../view-staff-details/"><b>My Staff</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../circle1/"><b>Out Staff</b></a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="../events/"><b>Events</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../alerts/"><b>Alerts</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../mailbox/" 
+                style="background-color: #24a0ed; color:white; border-radius: 5px;"><b>Mailbox</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../reports/"><b>Reports</b></a>
+            </li>            
+        </ul>
+    </div>
+</nav> -->
+
+<section class="main">
+    <div class="container pt-2">
+        <div class="card">
+            <h1 class="text-center pt-4 pb-4" style="background-color: #24a0ed; color: white;">New Message</h1>            
+            <div class="container mt-5">
+                <h4>To</h4><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="district">District</label>
+                        <select  id="" class="form-control">
+                            <option selected>Choose..</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="">SDPO</label>
+                        <select id="" class="form-control">
+                            <option selected>Choose..</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="">Circle</label>
+                        <select id="" class="form-control">
+                            <option selected>Choose..</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="">Police Station</label>
+                        <select id="" class="form-control">
+                            <option selected>Choose..</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5">
+                <form>
+                    <div class="form-group">
+                      <label for="usr"><h5>Subject</h5></label>
+                      <input type="text" class="form-control" id="subject">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd"><h5>Message</h5></label>
+                      <textarea class="form-control" rows="15" id="message"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" (click)="submit()">Cancel</button>
+                        <button type="button" class="btn btn-primary ml-5" (click)="submit()">Submit</button>
+                    </div>
+                  </form>
+            </div>                        
+        </div>  
+        
+    </div>
+</section>

@@ -1,0 +1,78 @@
+<!-- <nav class="navbar-nav navbar-expand-lg" style="background-color: #0e212a; height: 60px;">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../home/">Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../view-staff-details/">My Staff</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../circle1/">External Staff</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../events/">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../alerts/"
+          style="background-color: #750707; color:white; border-radius: 5px;"
+          >Alerts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../mailbox/">Mailbox</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../reports/">Reports</a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
+
+
+
+<section class="main">
+    <div class="container-fluid pt-5">
+        <span>
+            <button type="button" class="btn btn-primary" style="height: 50px; width: 130px; font-size: 20px;"><b>Incoming</b></button>
+            <button type="button" class="btn btn-outline-primary ml-5" style="height: 50px; width: 130px; font-size: 20px;" (click)="outgoing()"><b>Outgoing</b> </button>
+            <button type="button" class="btn btn-outline-primary ml-5" style="height: 50px; width: 130px; font-size: 20px;" (click)="compose()"><b>Compose</b> </button>
+        </span> 
+        <div class="table-responsive pt-5">
+            <table class="table text-center">
+                <thead>
+                    <tr class="element">
+                        <th>Event Id</th>
+                        <th>Event Name</th>
+                        <th>District</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Requested</th>
+                        <th>Allocation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="dot">
+                        <td>TS0126</td>
+                        <td>Ganesh Bundobust</td>
+                        <td>Cyberabad</td>
+                        <td>01-7-2020</td>
+                        <td>15-07-2020</td>
+                        <td> <button type="button" class="btn btn-info" style="font-size: 16px;" (click)="onClicked()">Start</button></td>
+                        <td> <button type="button" class="btn btn-info" style="font-size: 16px;" (click)="onClick()">Start</button></td>
+                    </tr>
+                    <tr class="dot">
+                        <td>TS0125</td>
+                        <td>VVIP Bundobust</td>
+                        <td>Hyderabad</td>
+                        <td>15-06-2020</td>
+                        <td>25-06-2020</td>
+                        <td> <button type="button" class="btn btn-info" (click)="onClicked()">Start</button></td>
+                        <td> <button type="button" class="btn btn-info" (click)="onClick()">Start</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>    
+    

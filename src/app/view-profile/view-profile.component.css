@@ -1,0 +1,64 @@
+.police {
+    margin-left: 10px;
+    background-color: #750707;
+    color: white;
+    width: 96px;
+    height: 30px;
+  }
+  
+  .caption {
+    position: absolute;
+    margin-top: 68px;
+    margin-left: 250px;
+    color: #ba913d;
+  }
+  
+
+.main{
+    background-color: rgb(248, 249, 250);   
+}
+
+.col-xs-1{
+    background-color: #364073;
+    color: white;
+}
+
+span{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3.5rem;
+}
+
+button{
+    border-radius: 15px;
+    width: 80px;
+    height: 50px;
+    background-color: #364073;
+    color: white;
+}
+
+.container h3{
+    background-color: #e3e1de;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card{
+    padding: 20px 0px 20px 0px;
+}
+
+.border {
+    background-color: #750707;
+    padding: 10px;
+}
+
+
+
+.fixed {
+    position: fixed;
+    width: 25%;
+}
+.scrollit {
+    float: left;
+    width: 71%
+}
